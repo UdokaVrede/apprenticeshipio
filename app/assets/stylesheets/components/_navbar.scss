@@ -1,12 +1,30 @@
-.navbar-lewagon {
+.navbar-apprenticeship {
   justify-content: space-between;
   background: white;
+  height: 100px;
+  font-family: $headers-font;
+  color: $black;
+  margin: 0px 50px 50px 50px;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-apprenticeship .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-apprenticeship .navbar-brand img {
+  width: 70px;
+  height: 60px;
+}
+
+.btn-flat {
+  color: white;
+  padding: 8px 14px;
+  border-radius: 4px;
+  background: $teal;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: $teal;
+  color: white;
 }
