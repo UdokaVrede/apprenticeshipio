@@ -1,19 +1,22 @@
-.navbar-apprenticeship {
-  justify-content: space-between;
-  background: white;
-  height: 100px;
+.podcast-header {
   font-family: $headers-font;
-  color: $black;
-  margin: 0px 50px 50px 50px;
+}
+
+.podcast-header-images img {
+  width: 20px;
+  height: 20px;
+}
+
+.navbar-apprenticeship {
+  font-family: $headers-font;
+}
+
+.navbar-brand img {
+  width: 70px;
+  height: 60px;
 }
 
 .navbar-apprenticeship .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-apprenticeship .navbar-brand img {
-  width: 70px;
-  height: 60px;
 }
 
 .btn-flat {
