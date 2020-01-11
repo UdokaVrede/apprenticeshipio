@@ -1,5 +1,11 @@
 .podcast-header {
   font-family: $headers-font;
+  font-color: $black;
+  float: right;
+}
+
+.podcast-header-links a:hover {
+  opacity: .15;
 }
 
 .podcast-header-images img {
@@ -11,12 +17,13 @@
   font-family: $headers-font;
 }
 
+.navbar-nav {
+  float: right;
+}
+
 .navbar-brand img {
   width: 70px;
   height: 60px;
-}
-
-.navbar-apprenticeship .navbar-collapse {
 }
 
 .btn-flat {
