@@ -7,7 +7,7 @@
   border-radius: 30px;
   overflow:hidden;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
-  margin: 30px;
+  margin: 40px;
 }
 
 .apprentice-profile-img {
@@ -38,14 +38,16 @@
 }
 
 .apprentice-logo img {
-  height: 100%;
+  height: 90%;
+  width: 100%;
 }
 
-.apprentice-description {
+.apprentice-name {
   position: absolute;
   color: $white;
-  font-family: $body-font;
-  left: 150px;
+  font-family: $headers-font;
+  font-size: 28px;
+  left: 230px;
   bottom: 26%;
 }
 
@@ -64,7 +66,9 @@
   position: absolute;
   color: $white;
   left: 30px;
-  bottom: 10%;
+  line-height: 0;
+  padding-top: 40px;
+  font-family: $body-font;
 }
 
 body {
