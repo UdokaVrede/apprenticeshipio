@@ -9,6 +9,12 @@
   overflow: hidden;
   max-width: 100%;
   width: 400px;
+  margin-left: 200px;
+}
+
+.testimonial:nth-child(even) {
+  margin-left: auto;
+  margin-right: 200px;
 }
 
 .testimonial-body {
