@@ -10,15 +10,55 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_24_211618) do
+ActiveRecord::Schema.define(version: 2020_02_18_141629) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "apprentices", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.string "race"
+    t.string "gender"
+    t.string "previous_career"
+    t.string "linkedin_url"
+    t.string "photo_url"
+    t.datetime "date_started"
+    t.datetime "date_ended"
+    t.boolean "converted"
+    t.string "current_title"
+    t.string "current_company"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "companies", force: :cascade do |t|
+    t.string "name"
+    t.integer "size"
+    t.integer "salary"
+    t.datetime "upcoming_cohort"
+    t.integer "number_of_apprentices"
+    t.integer "number_of_cohorts"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "partners", force: :cascade do |t|
     t.string "name"
     t.string "type"
     t.string "location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "schools", force: :cascade do |t|
+    t.string "name"
+    t.string "location"
+    t.integer "cost"
+    t.string "type"
+    t.integer "duration"
+    t.string "field"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
