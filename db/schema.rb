@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_18_141629) do
+ActiveRecord::Schema.define(version: 2020_03_05_142756) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -31,6 +31,8 @@ ActiveRecord::Schema.define(version: 2020_02_18_141629) do
     t.string "current_company"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "approved_to_publish"
+    t.boolean "podcast_recorded"
   end
 
   create_table "companies", force: :cascade do |t|
@@ -42,6 +44,10 @@ ActiveRecord::Schema.define(version: 2020_02_18_141629) do
     t.integer "number_of_cohorts"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "location"
+    t.string "apprenticeship_location"
+    t.string "company_url"
+    t.string "apprenticeship_url"
   end
 
   create_table "partners", force: :cascade do |t|
@@ -50,6 +56,8 @@ ActiveRecord::Schema.define(version: 2020_02_18_141629) do
     t.string "location"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.date "date_founded"
+    t.boolean "currently_operating"
   end
 
   create_table "schools", force: :cascade do |t|
@@ -61,6 +69,8 @@ ActiveRecord::Schema.define(version: 2020_02_18_141629) do
     t.string "field"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.date "date_founded"
+    t.boolean "currently_operating"
   end
 
 end
