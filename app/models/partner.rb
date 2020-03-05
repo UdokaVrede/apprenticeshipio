@@ -1,5 +1,13 @@
 class Partner < ApplicationRecord
-  # requires a name, type, location
-  # has many companies (not required)
-  # has many schools (not required)
+  #Associations
+  :has_many companies
+  :has_many schools
+
+  # Validations
+  validates :name, :location, :date_founded, :currently_operating, :presence => true
+  allow_blank :type
 end
+
+# TODO
+# check date formatting
+# check boolean formatting

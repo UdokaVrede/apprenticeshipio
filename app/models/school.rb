@@ -1,7 +1,16 @@
 class School < ApplicationRecord
-  # requires a name
-  # requires a location
-  # has a cost, type, duration, and field
-  # has many apprentices
+  #Associations
+  :has_many apprentices
+  :has_many partners
 
+  # Validations
+  validates :name, :location, :date_founded, :currently_operating, :presence => true
+  validates_associated :apprentices
+  validates_associated :partners
+  allow_blank :cost, :type, :duration, :field
 end
+
+# TODO
+# check date formatting
+# check boolean formatting
+# check cost formatting
