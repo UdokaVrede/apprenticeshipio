@@ -1,7 +1,7 @@
 class School < ApplicationRecord
   #Associations
-  :has_many apprentices
-  :has_many partners
+  has_many :apprentices
+  has_many :partners
 
   # Validations
   validates :name, :location, :date_founded, :currently_operating, :presence => true
