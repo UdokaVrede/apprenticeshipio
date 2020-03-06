@@ -9,6 +9,7 @@ class PagesController < ApplicationController
   end
 
   def hall_of_fame
+    @apprentices = Apprentice.all
   end
 
   def resources

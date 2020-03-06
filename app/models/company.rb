@@ -1,7 +1,7 @@
 class Company < ApplicationRecord
   #Associations
-  :has_many apprentices
-  :has_many partners
+  has_many :apprentices
+  has_many :partners
 
   # Validations
   validates :name, :size, :location, :apprenticeship_location, :company_url, :presence => true
