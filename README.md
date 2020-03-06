@@ -2,7 +2,7 @@
 
 ### The largest community of U.S. based software engineering apprenticeships.
 
-> ""The true soldier fights not because she hates what is in front of her, but because she loves what is behind her."  
+> "The true soldier fights not because she hates what is in front of her, but because she loves what is behind her."  
 > - G.K. Chesterton
 
 # Background
