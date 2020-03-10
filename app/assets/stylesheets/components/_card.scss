@@ -15,7 +15,7 @@
 }
 
 .apprentice-description-bk {
-  background-color: $orange;
+  background-color: $purple;
   border-radius: 30px;
   position: absolute;
   top: 55%;
@@ -29,7 +29,7 @@
   height: 80px;
   width: 80px;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: $white;
   position: absolute;
   bottom: 30%;
   left: 30px;
@@ -38,7 +38,7 @@
 }
 
 .apprentice-logo img {
-  height: 90%;
+  height: 100%;
   width: 100%;
 }
 
@@ -53,13 +53,18 @@
 
 .apprentice-btn {
   position: absolute;
-  background-color: $teal;
+  background-color: $medium-purple;
   font-family: $headers-font;
-  color: $white;
   right: 30px;
   bottom: 10%;
-  padding: 10px 20px;
-  border-radius: 4px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+.apprentice-btn a {
+  color: $white;
+  font-weight: bold;
 }
 
 .apprentice-info {
@@ -79,8 +84,7 @@ body {
   width: 14px;
   height: 14px;
   position: fixed;
-  color: $white;
-  background-color: $teal;
+  background-color: $medium-purple;
   padding: 10px;
   top: 5px;
   right: 5px;
