@@ -1,29 +1,24 @@
 .podcast-header {
-  font-family: $headers-font;
-  color: $white;
-  background-color: $white;
   float: right;
   padding-right: 15px;
-  padding-top: 15px;
+  padding-top: 22px;
   margin: 5px;
   text-align: center;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: bold;
 }
 
-.podcast-header-links {
-  background-color: $teal;
+.header-links {
   border-radius: 4px;
   padding: 5px;
 }
 
-.podcast-header-links a:hover {
-  opacity: .15;
+.header-links a {
+  padding: 5px;
 }
 
-.podcast-header-images img {
-  width: 20px;
-  height: 20px;
+.header-links a:hover {
+  opacity: .15;
 }
 
 .navbar-apprenticeship .nav-link {
@@ -40,8 +35,8 @@
 
 .btn-flat {
   color: white;
-  padding: 8px 14px;
-  border-radius: 4px;
+  padding: 6px 12px;
+  border-radius: 5px;
   background: $teal;
   transition: background 0.3s ease;
   font-family: $headers-font;
