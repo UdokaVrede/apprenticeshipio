@@ -1,0 +1,73 @@
+.team-member-container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.team-member {
+  display: inline-block;
+  position: relative;
+  width: 275px;
+  min-width: 200px;
+  height: 275px;
+  border-radius: 15px;
+  overflow:hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  margin: 50px;
+}
+
+.team-member-profile-img {
+  height: 70%;
+}
+
+.team-member-description-bk {
+  background-color: $purple;
+  border-radius: 30px;
+  position: absolute;
+  top: 55%;
+  left: -5px;
+  height: 65%;
+  width: 108%;
+  transform: skew(19deg, -9deg);
+}
+
+.team-member-name {
+  position: absolute;
+  color: $white;
+  font-family: $headers-font;
+  font-size: 18px;
+  left: 150px;
+  bottom: 26%;
+}
+
+.team-member-btn {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  padding: 3px 6px;
+  color: $medium-purple;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+.team-member-info {
+  font-size: 12px;
+  position: absolute;
+  color: $white;
+  left: 15px;
+  line-height: 0;
+  padding-top: 20px;
+  font-family: $body-font;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+.team-member-btn i:before {
+  width: 7px;
+  height: 7px;
+  position: fixed;
+  color: $medium-purple;
+  padding: 5px;
+  top: 2.5px;
+  right: 2.5px;
+}

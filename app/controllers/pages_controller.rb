@@ -9,10 +9,18 @@ class PagesController < ApplicationController
   end
 
   def hall_of_fame
-    @apprentices = Apprentice.all
   end
 
-  def resources
+  def candidates
+  end
+
+  def apprentices
+  end
+
+  def employers
+  end
+
+  def educators
   end
 
   def apply_now
