@@ -17,25 +17,25 @@
     </a>
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="about_us">About Us</a>
+        <%= link_to "About Us", about_us_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="our_data">Our Data</a>
+        <%= link_to "Our Data", our_data_path, class: "nav-link" %>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="hall_of_fame">Hall of Fame</a>
+        <%= link_to "Hall of Fame", hall_of_fame_path, class: "nav-link" %>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
           <div class="dropdown-menu dropdown-menu-right" >
-          <a class="dropdown-item" href="resources">For Candidates</a>
-          <a class="dropdown-item" href="resources">For Apprentices</a>
-          <a class="dropdown-item" href="resources">For Employers</a>
-          <a class="dropdown-item" href="resources">For Educators</a>
+          <%= link_to "For Candidates", resources_candidates_path, class: "dropdown-item" %>
+          <%= link_to "For Apprentices", resources_apprentices_path, class: "dropdown-item" %>
+          <%= link_to "For Employers", resources_employers_path, class: "dropdown-item" %>
+          <%= link_to "For Educators", resources_educators_path, class: "dropdown-item" %>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="btn btn-flat" href="apply_now">Apply Now</a>
+      <li class="nav-item-button">
+        <%= link_to "Apply Now", apply_now_path, class: "btn btn-flat" %>
       </li>
     </ul>
   </div>

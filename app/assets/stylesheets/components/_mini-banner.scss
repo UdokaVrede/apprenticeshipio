@@ -1,7 +1,45 @@
 .mini-banner {
-  background-color: $medium-blue;
   background-position: center;
-  padding: 100px 0;
+  padding: 100px;
+}
+
+.home-top {
+  background-color: $medium-blue;
+  text-align: left;
+}
+.home-bottom {
+  background-color: $medium-blue;
+  text-align: right;
+}
+
+.about-top {
+  background-color: $orange;
+  text-align: left;
+}
+
+.about-bottom {
+  background-color: $orange;
+  text-align: right;
+}
+
+.hof-top {
+  background-color: $purple;
+  text-align: left;
+}
+
+.hof-bottom {
+  background-color: $purple;
+  text-align: right;
+}
+
+.apply-top {
+  background-color: $teal;
+  text-align: left;
+}
+
+.apply-bottom {
+  background-color: $teal;
+  text-align: right;
 }
 
 .mini-container {

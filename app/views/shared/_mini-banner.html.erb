@@ -1,6 +1,54 @@
-<div class="mini-banner" style="">
+      <% case type
+        when "home-top"
+          class_type = "mini-banner home-top"
+          h1_text = "What is an Apprenticeship?"
+          p_text = "An apprenticeship is a 6 to 12 month (or longer!) paid training program aimed at developing mastery in specialized, high demand skills. Apprenticeships are hands-on, state of the art learning environments guided and supported by an advanced person of the trade or craft. You remember the Medieval blacksmiths? That's right, this path has been proven for over 500 years."
+        when "home-bottom"
+          class_type = "mini-banner home-bottom"
+          h1_text = "In the News"
+          p_text = "Learn more about apprenticeships in technology happening all around the U.S."
+        when "about-top"
+          class_type = "mini-banner about-top"
+          h1_text = "About Us"
+          p_text = "Learn more about the incredible team that builds and inspires our community."
+        when "about-bottom"
+          class_type = "mini-banner about-bottom"
+          h1_text = "Want to Join Forces?"
+          p_text = "We are always looking to connect with folks who believe in apprenticeships."
+        when "hof-top"
+          class_type = "mini-banner hof-top"
+          h1_text = "Hall Of Fame"
+          p_text = "It's time to get to know some of the amazing apprentices in software engineering around the United States."
+        when "hof-bottom"
+          class_type = "mini-banner hof-bottom"
+          h1_text = "Know an Apprentice?"
+          p_text = "We would love to hear from you if you or someone you know should be added to our community!"
+        when "apply-top"
+          class_type = "mini-banner apply-top"
+          h1_text = "Open Apprenticeships"
+          p_text = "Find an apprenticeship for you and someone you love!"
+        when "apply-bottom"
+          class_type = "mini-banner apply-bottom"
+          h1_text = "Know More Apprenticeships?"
+          p_text = "We would love to hear from you if you know an apprenticeship we should add to our community!"
+      end %>
+
+<div class="<%= class_type %>" style="">
   <div class="mini-container">
-    <h1>Hall of Fame</h1>
-    <p>It's time to get to know some of the amazing apprentices in software engineering around the United States.</p>
+    <h1>
+      <%= h1_text %>
+    </h1>
+    <p>
+      <%= p_text %>
+    </p>
   </div>
 </div>
+
+<!-- About Us - Bottom
+<button> Let's Connect!
+
+Hall of Fame - Bottom
+<button> Nominate!
+
+Apply Now - Bottom
+<button> Nominate an Apprentice -->
