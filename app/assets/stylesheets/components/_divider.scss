@@ -1,0 +1,28 @@
+.divider {
+  font-family: $headers-font;
+  height: 75px;
+  padding: 0px 25px;
+  background-color: $blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slack-button, .mailchimp-button {
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  background-color: $navy;
+  transition: background 0.3s ease;
+  font-family: $headers-font;
+  border-style: none;
+}
+
+.mailchimp-signup {
+  align-items: center;
+}
+
+.fa-mailchimp, .fa-slack {
+  font-size: 32px;
+  color: $navy;
+}

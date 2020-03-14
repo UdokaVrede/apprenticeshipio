@@ -15,6 +15,7 @@
           class_type = "mini-banner about-bottom"
           h1_text = "Want to Join Forces?"
           p_text = "We are always looking to connect with folks who believe in apprenticeships."
+          btn_text = "Let's Connect"
         when "hof-top"
           class_type = "mini-banner hof-top"
           h1_text = "Hall Of Fame"
@@ -23,6 +24,7 @@
           class_type = "mini-banner hof-bottom"
           h1_text = "Know an Apprentice?"
           p_text = "We would love to hear from you if you or someone you know should be added to our community!"
+          btn_text = "Nominate an Apprentice"
         when "apply-top"
           class_type = "mini-banner apply-top"
           h1_text = "Open Apprenticeships"
@@ -31,6 +33,7 @@
           class_type = "mini-banner apply-bottom"
           h1_text = "Know More Apprenticeships?"
           p_text = "We would love to hear from you if you know an apprenticeship we should add to our community!"
+          btn_text = "Share a Program"
       end %>
 
 <div class="<%= class_type %>" style="">
@@ -41,14 +44,8 @@
     <p>
       <%= p_text %>
     </p>
+    <button>
+      <%= btn_text %>
+    </button>
   </div>
 </div>
-
-<!-- About Us - Bottom
-<button> Let's Connect!
-
-Hall of Fame - Bottom
-<button> Nominate!
-
-Apply Now - Bottom
-<button> Nominate an Apprentice -->
