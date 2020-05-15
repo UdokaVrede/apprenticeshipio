@@ -1,16 +1,69 @@
-.mission-statement {
+.mission-container, .inspiration-container {
   padding: 150px 250px 150px 250px;
 }
 
-.our-team {
+.story-container {
+  padding: 150px 250px 0px 250px;
+}
+
+.team-title {
   font-family: $headers-font;
   font-size: 30px;
   text-align: center;
 }
 
-.our-supporters {
-  padding-top: 150px;
+.supporters-title {
+  padding-top: 100px;
   font-family: $headers-font;
   font-size: 30px;
   text-align: center;
 }
+
+.story-title, .inspiration-title {
+  padding-bottom: 50px;
+  font-family: $headers-font;
+  font-size: 30px;
+  text-align: center;
+}
+
+.mission {
+  background-color: $blue;
+  color: $white;
+  font-family: $body-font;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+.purpose {
+  font-family: $headers-font;
+  font-size: 25px;
+  text-align: center;
+}
+
+.emojis {
+  font-size: 40px;
+  text-align: center;
+  padding: 15px;
+  padding-bottom: 0px;
+}
+
+.story {
+  background-color: $teal;
+  color: $white;
+  font-family: $body-font;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+.inspiration {
+  background-color: $purple;
+  color: $white;
+  font-family: $body-font;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+

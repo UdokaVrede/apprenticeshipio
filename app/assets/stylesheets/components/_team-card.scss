@@ -16,7 +16,9 @@
 }
 
 .team-member-profile-img {
+  object-fit: cover;
   height: 70%;
+  width: 100%;
 }
 
 .team-member-description-bk {
