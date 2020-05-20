@@ -43,6 +43,46 @@
   text-align: right;
 }
 
+.candidates-top {
+  background-color: $medium-red;
+  text-align: left;
+}
+
+.candidates-bottom {
+  background-color: $medium-red;
+  text-align: right;
+}
+
+.apprentices-top {
+  background-color: $orange;
+  text-align: left;
+}
+
+.apprentices-bottom {
+  background-color: $orange;
+  text-align: right;
+}
+
+.employers-top {
+  background-color: $teal;
+  text-align: left;
+}
+
+.employers-bottom {
+  background-color: $teal;
+  text-align: right;
+}
+
+.educators-top {
+  background-color: $medium-blue;
+  text-align: left;
+}
+
+.educators-bottom {
+  background-color: $medium-blue;
+  text-align: right;
+}
+
 .mini-container {
   margin-left: 80px;
 }
