@@ -30,10 +30,12 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
           <div class="dropdown-menu dropdown-menu-right" >
-          <%= link_to "For Candidates", resources_candidates_path, class: "dropdown-item" %>
           <%= link_to "For Apprentices", resources_apprentices_path, class: "dropdown-item" %>
           <%= link_to "For Employers", resources_employers_path, class: "dropdown-item" %>
-          <%= link_to "For Educators", resources_educators_path, class: "dropdown-item" %>
+          <a class="dropdown-item"> For Candidates <div class="coming-soon"> <i class="fas fa-wrench"></i> Coming Soon! </div> </a>
+          <a class="dropdown-item"> For Educators <div class="coming-soon"> <i class="fas fa-wrench"></i> Coming Soon! </div> </a>
+          <!-- link_to "For Candidates", resources_candidates_path, class: "dropdown-item" -->
+          <!-- link_to "For Educators", resources_educators_path, class: "dropdown-item" -->
         </div>
       </li>
 <!--       <li class="nav-item-button">

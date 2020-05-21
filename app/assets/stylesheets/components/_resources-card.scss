@@ -12,10 +12,48 @@
   margin-bottom: 30px;
 }
 
-.resources-card img {
-  height: 100%;
+.resources-card i {
   width: 120px;
-  object-fit: cover;
+}
+
+.fa-star-of-life {
+  color: $plum;
+  font-size: 30px;
+}
+
+.fa-hands-helping {
+  color: $medium-blue;
+  font-size: 30px;
+}
+
+.fa-stopwatch {
+  color: $purple;
+  font-size: 30px;
+}
+
+.fa-palette {
+  color: $teal;
+  font-size: 30px;
+}
+
+.fa-lightbulb {
+  color: $red;
+  font-size: 30px;
+}
+
+.fa-rocket {
+  color: $medium-purple;
+  font-size: 30px;
+}
+
+.fa-users {
+  color: $blue;
+  font-size: 30px;
+}
+
+.fa-trophy {
+  color: $orange;
+  font-size: 30px;
 }
 
 .resources-card h2 {
