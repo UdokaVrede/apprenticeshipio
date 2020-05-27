@@ -5,11 +5,18 @@
 .resources-card {
   overflow: hidden;
   height: 120px;
-  background: white;
+  background: $hover-gray;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  color: $black;
+}
+
+.resources-link:hover {
+  background-color: $hover-gray;
+  text-decoration: none;
+  color: $black;
 }
 
 .resources-card i {
@@ -53,6 +60,11 @@
 
 .fa-trophy {
   color: $orange;
+  font-size: 30px;
+}
+
+.fa-slack {
+  color: $plum;
   font-size: 30px;
 }
 
