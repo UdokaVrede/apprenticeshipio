@@ -14,8 +14,63 @@
   height: 70%;
 }
 
-.apprentice-description-bk {
+.apprentice-description-bk-red {
+  background-color: $medium-red;
+  border-radius: 30px;
+  position: absolute;
+  top: 55%;
+  left: -5px;
+  height: 65%;
+  width: 108%;
+  transform: skew(19deg, -9deg);
+}
+
+.apprentice-description-bk-blue {
+  background-color: $blue;
+  border-radius: 30px;
+  position: absolute;
+  top: 55%;
+  left: -5px;
+  height: 65%;
+  width: 108%;
+  transform: skew(19deg, -9deg);
+}
+
+.apprentice-description-bk-teal {
+  background-color: $teal;
+  border-radius: 30px;
+  position: absolute;
+  top: 55%;
+  left: -5px;
+  height: 65%;
+  width: 108%;
+  transform: skew(19deg, -9deg);
+}
+
+.apprentice-description-bk-purple {
   background-color: $purple;
+  border-radius: 30px;
+  position: absolute;
+  top: 55%;
+  left: -5px;
+  height: 65%;
+  width: 108%;
+  transform: skew(19deg, -9deg);
+}
+
+.apprentice-description-bk-orange {
+  background-color: $orange;
+  border-radius: 30px;
+  position: absolute;
+  top: 55%;
+  left: -5px;
+  height: 65%;
+  width: 108%;
+  transform: skew(19deg, -9deg);
+}
+
+.apprentice-description-bk-plum {
+  background-color: $plum;
   border-radius: 30px;
   position: absolute;
   top: 55%;
@@ -51,9 +106,36 @@
   bottom: 26%;
 }
 
+.apprentice-name-short {
+  position: absolute;
+  color: $white;
+  font-family: $headers-font;
+  font-size: 28px;
+  left: 230px;
+  bottom: 26%;
+}
+
+.apprentice-name-long {
+  position: absolute;
+  color: $white;
+  font-family: $headers-font;
+  font-size: 26px;
+  left: 200px;
+  bottom: 26%;
+}
+
+.apprentice-name-extra-long {
+  position: absolute;
+  color: $white;
+  font-family: $headers-font;
+  font-size: 24px;
+  left: 175px;
+  bottom: 26%;
+}
+
 .apprentice-btn {
   position: absolute;
-  background-color: $medium-purple;
+  background-color: $hover-gray;
   font-family: $headers-font;
   right: 30px;
   bottom: 10%;
@@ -63,7 +145,7 @@
 }
 
 .apprentice-btn a {
-  color: $white;
+  color: $black;
   font-weight: bold;
 }
 
