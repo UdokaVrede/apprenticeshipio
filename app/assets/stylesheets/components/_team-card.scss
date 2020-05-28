@@ -37,8 +37,8 @@
   color: $white;
   font-family: $headers-font;
   font-size: 18px;
-  left: 150px;
-  bottom: 26%;
+  left: 125px;
+  bottom: 20%;
 }
 
 .team-member-btn {
@@ -46,8 +46,8 @@
   right: 15px;
   bottom: 15px;
   padding: 3px 6px;
-  color: $medium-purple;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  color: $white;
+  box-shadow: 10px 10px 30px rgba(0.7, 0.7, 0.7, 0.7);
 }
 
 .team-member-info {
@@ -58,18 +58,4 @@
   line-height: 0;
   padding-top: 20px;
   font-family: $body-font;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-}
-.team-member-btn i:before {
-  width: 7px;
-  height: 7px;
-  position: fixed;
-  color: $medium-purple;
-  padding: 5px;
-  top: 2.5px;
-  right: 2.5px;
 }
