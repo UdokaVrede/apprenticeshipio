@@ -80,6 +80,17 @@
   transform: skew(19deg, -9deg);
 }
 
+.apprentice-description-bk-medium-blue {
+  background-color: $medium-blue;
+  border-radius: 30px;
+  position: absolute;
+  top: 55%;
+  left: -5px;
+  height: 65%;
+  width: 108%;
+  transform: skew(19deg, -9deg);
+}
+
 .apprentice-logo {
   height: 80px;
   width: 80px;
@@ -130,6 +141,15 @@
   font-family: $headers-font;
   font-size: 24px;
   left: 175px;
+  bottom: 26%;
+}
+
+.apprentice-name-super-extra-long {
+  position: absolute;
+  color: $white;
+  font-family: $headers-font;
+  font-size: 24px;
+  left: 150px;
   bottom: 26%;
 }
 

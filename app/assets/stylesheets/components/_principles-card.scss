@@ -1,0 +1,24 @@
+.principle-container {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.principle {
+  display: inline-block;
+  position: relative;
+  width: 275px;
+  min-width: 200px;
+  height: 275px;
+  border-radius: 15px;
+  overflow:hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  margin: 50px;
+  background-color: $purple;
+}
+
+.principle-info {
+  font-size: 25px;
+  color: $white;
+  margin: 32px;
+  font-family: $headers-font;
+}

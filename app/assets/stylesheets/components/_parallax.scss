@@ -67,8 +67,10 @@
     top:0;
     left:0;
   // Insert falling degrees background image here
-    background-image: url("https://i.imgur.com/7VSA6VB.png");
+    background-image: url("https://i.imgur.com/C46DO20.jpg");
     position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: -1;
     transform:translateZ(-1px) scale(2);
 }
@@ -142,8 +144,10 @@
     top:0;
     left:0;
   // Insert identities background image here
-    background-image: url("https://i.imgur.com/7VSA6VB.png");
+    background-image: url("https://i.imgur.com/sgppmaH.jpg");
     position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: -1;
     transform:translateZ(-1px) scale(2);
 }
