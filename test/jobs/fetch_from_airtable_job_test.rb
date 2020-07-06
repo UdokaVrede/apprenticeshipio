@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class ScrapeCareerKarmaJobTest < ActiveJob::TestCase
+class FetchFromAirtableJobTest < ActiveJob::TestCase
   # test "the truth" do
   #   assert true
   # end

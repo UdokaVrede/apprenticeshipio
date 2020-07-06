@@ -8,11 +8,11 @@ class UpdateAirtableJob < ApplicationJob
 
     table_json = open(airtable_api).read
     table_info = JSON.parse(table_json)
-    tables_array =
+    # tables_array = 
     tables_array.each do |table|
       # TODO decide what to do
+    end
   end
-end
 
   def perform
     tables_array = ["apprentices", "companies", "partners", "schools"]
