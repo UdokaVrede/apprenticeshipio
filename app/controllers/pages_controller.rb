@@ -3,6 +3,13 @@ class PagesController < ApplicationController
   end
 
   def about_us
+    @team_members = [
+      {name: "Lyn Muldrow", img_url: "https://i.imgur.com/TWFrhpM.jpg", job: "Senior Developer Educator", company: "at DigitalOcean", location: "Atlanta, GA"},
+      {name: "Kam Klauschie", img_url: "https://i.imgur.com/XZQLbYh.jpg", job: "Front End Engineer + Career Advisor", company: "at Pathrise", location: "Rio de Janeiro, Brazil"},
+      {name: "Amelia Padua", img_url: "https://i.imgur.com/PM3nEsv.jpg", job: "Software Engineer", company: "at Pixavo", location: "Chicago, IL" },
+      {name: "Marcos Cannabrava", img_url: "https://i.imgur.com/WcCT27g.jpg", job: "Co-Founder & Lead Developer", company: "at CareConsult", location: "Rio de Janeiro, Brazil"},
+      {name: "Zara Aslam", img_url: "https://i.imgur.com/TWFrhpM.jpg", job: "Looking for New Opportunities", company: "Due to COVID-19", location: "Seattle, WA"}
+    ]
   end
 
   def our_data
