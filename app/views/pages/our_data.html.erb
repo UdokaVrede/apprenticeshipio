@@ -9,7 +9,7 @@
       <img src="https://i.imgur.com/xEEnl8e.png" class="floating-image-usa" alt="United States Map" />
       <div class="content-usa">
         <h3>In the United States, we are tracking</h3>
-        <h1 class="usa-number">941</h1>
+        <h1 class="usa-number"><%= @total_aprnts%></h1>
         <br><h3>Apprentice Software Engineers.</h3>
       </div>
     </div>
@@ -18,8 +18,12 @@
 
     <div class="parallax-wrapper-education">
       <div class="content-education">
-        <h1 class="education-number">51%</h1><br><h3>of apprentices have <br>a 4 year undergraduate degree.</h3><br>
-        <h1 class="education-number">74%</h1><br><h3>of apprentices attended<br>a coding bootcamp.</h3><br>
+        <h1 class="education-number">
+          <%=@perc_aprnts_gt_4_degree%>%
+        </h1><br><h3>of apprentices have <br>a 4 year undergraduate degree.</h3><br>
+        <h1 class="education-number">
+          <%=@perc_aprnts_bootcamp%>%
+        </h1><br><h3>of apprentices attended<br>a coding bootcamp.</h3><br>
       </div>
     </div>
 
@@ -33,8 +37,9 @@
       <img src="" class="floating-image-careers" alt="" />
       <img src="" class="floating-image-careers" alt="" />
       <div class="content-careers">
-        <h3>The top 5 most common<br> previous careers were...<br>
-        Sales, Teaching, IT/Networking, Food Service, Small Business.</h3>
+        <h3>
+          The top 5 most common<br> previous careers were...<br><%=@top_five_prev_careers%>
+        </h3>
         </p>
       </div>
     </div>
@@ -43,8 +48,8 @@
 
     <div class="parallax-wrapper-identity">
       <div class="content-identity">
-        <h3> We estimate around</h3><h1 class="identity-number"> 74%</h1><h3> of apprentices come from an underrepresented gender identity.</h3><br>
-        <h3> We estimate around</h3><h1 class="identity-number"> 54%</h1><h3> of apprentices come from an underrepresented racial identity.</h3><br></p>
+        <h3> We estimate around</h3><h1 class="identity-number"> <%=@perc_aprnts_ugi%>%</h1><h3> of apprentices come from an underrepresented gender identity.</h3><br>
+        <h3> We estimate around</h3><h1 class="identity-number"> <%=@perc_aprnts_uri%>%</h1><h3> of apprentices come from an underrepresented racial identity.</h3><br></p>
       </div>
     </div>
 
@@ -57,7 +62,7 @@
       <img src="" class="floating-image-surprises" alt="" />
       <div class="content-surprises">
        <h3> An apprentice at Uber was a former professional dancer. <br>
-        An apprentice at _____ was a former butcher. <br>
+        An apprentice at Pinterest was a former musician. <br>
         An apprentice at LinkedIn was a former personal trainer. <br></h3>
       </div>
     </div>
@@ -70,7 +75,7 @@
       <img src="https://i.imgur.com/xEEnl8e.png" class="floating-image-usa" alt="United States Map" />
       <div class="content-usa">
         <h3>In the United States, we are tracking</h3>
-        <h1 class="usa-number">110</h1>
+        <h1 class="usa-number"><%=@total_companies%></h1>
         <br><h3>companies with software engineering apprenticeships.</h3>
       </div>
     </div>
@@ -145,13 +150,6 @@
       </div>
     </div>
 
-<!-- Company Statistic #10 -->
-
-    <div class="parallax-wrapper-annual">
-      <div class="content-annual">
-        <h3>Microsoft is hiring and training the most software engineer apprentices each year, about 120 apprentices.<br></h3>
-      </div>
-    </div>
 
 <!--   Navbar #2 -->
 <div class="parallax-navbar"><span>Tech Industry</span></div>

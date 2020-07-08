@@ -4,6 +4,8 @@ require 'json'
 class CalcAirtableStatsJob < ApplicationJob
   queue_as :default
 
+  # Run:
+  # CalcAirtableStatsJob.perform_now
   def perform
     dir = Rails.root.join('storage')
     apprentices = JSON.parse(File.open(dir + "apprentices.json", "r").read)
@@ -11,12 +13,9 @@ class CalcAirtableStatsJob < ApplicationJob
 
     # total_aprnts # number of aprnts
     total_aprnts = apprentices.length()
-    p 'total apprentices', total_aprnts
-
+    
     # total_companies # number of companies
     total_companies = companies.length()
-    p 'total companies', total_companies
-
 
     aprnts_gt_4_degree = 0
     aprnts_bootcamp = 0
@@ -59,6 +58,8 @@ class CalcAirtableStatsJob < ApplicationJob
       aprnts_per_co[co["fields"]["name"]] = co["fields"]["number_of_apprentices"]
     end
 
+    p 'total apprentices', total_aprnts
+    p 'total companies', total_companies
     p 'aprnts_gt_4_degree', aprnts_gt_4_degree
     p 'aprnts_bootcamp', aprnts_bootcamp
     p 'aprnts_per_prev_career', aprnts_per_prev_career
@@ -68,6 +69,17 @@ class CalcAirtableStatsJob < ApplicationJob
     p 'companies_per_employee', companies_per_employee
     p 'aprnts_per_co', aprnts_per_co
 
+    return total_aprnts,
+      total_companies,
+      aprnts_gt_4_degree,
+      aprnts_bootcamp,
+      aprnts_per_prev_career,
+      aprnts_ugi,
+      aprnts_uri,
+      aprnts_to_fte,
+      companies_per_employee,
+      aprnts_per_co
+    
   end
 end
 

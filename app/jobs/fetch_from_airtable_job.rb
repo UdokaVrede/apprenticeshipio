@@ -8,8 +8,8 @@ class FetchFromAirtableJob < ApplicationJob
   # e.g. FetchFromAirtableJob.perform_now("apprentices")
   def perform(table)
     table_data = []
-    # The API returns 100 records per call ("page") and if it reaches it's limit it sends an "offset" key.
-    # To "paginate" to the next 100 records, we should include the "offset" value in the request.
+    # The API returns 100 records per call ("page") and if it reaches its limit it sends an "offset" key.
+    # To paginate to the next 100 records, we include the "offset" value in the request.
     query = ""
     begin
       url = "https://api.airtable.com/v0/app73alvcuASBVNl1/#{table}?view=Database%20Grid%20View" + query
