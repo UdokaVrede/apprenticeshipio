@@ -28,11 +28,9 @@
 </div>
   <center>
   <div class= "team-member-container">
-  <%= render "shared/team_cards/lyn" %>
-  <%= render "shared/team_cards/kam" %>
-  <%= render "shared/team_cards/amelia" %>
-  <%= render "shared/team_cards/marcos" %>
-  <%= render "shared/team_cards/zara" %>
+  <% @team_members.map do |team_member| %>
+    <%= render "shared/team_card", locals: team_member %>
+  <% end %>
   </div>
   </center>
 <div class="supporters-title">
