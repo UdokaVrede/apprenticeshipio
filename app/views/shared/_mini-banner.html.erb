@@ -16,6 +16,7 @@
           h1_text = "Want to Join Forces?"
           p_text = "We are always looking to connect with folks who believe in apprenticeships."
           btn_text = "Let's Connect"
+          btn_link = "mailto:kam@apprenticeship.io"
         when "hof-top"
           class_type = "mini-banner hof-top"
           h1_text = "Hall Of Fame"
@@ -25,6 +26,7 @@
           h1_text = "Know an Apprentice?"
           p_text = "We would love to hear from you if you or someone you know should be added to our community!"
           btn_text = "Nominate an Apprentice"
+          btn_link = "mailto:kam@apprenticeship.io"
         when "apply-top"
           class_type = "mini-banner apply-top"
           h1_text = "Open Apprenticeships"
@@ -34,6 +36,7 @@
           h1_text = "Know More Apprenticeships?"
           p_text = "We would love to hear from you if you know an apprenticeship we should add to our community!"
           btn_text = "Share a Program"
+          btn_link = "mailto:kam@apprenticeship.io"
         when "candidates-top"
           class_type = "mini-banner candidates-top"
           h1_text = "For Candidates"
@@ -43,6 +46,7 @@
           h1_text = "Not Finding What You Need?"
           p_text = "Tell us what you're looking for to prepare!"
           btn_text = "Contact Us"
+          btn_link = "mailto:kam@apprenticeship.io"
         when "apprentices-top"
           class_type = "mini-banner apprentices-top"
           h1_text = "For Apprentices"
@@ -52,6 +56,7 @@
           h1_text = "Not Finding What You Need?"
           p_text = "Tell us what you're looking for as you progress in your apprenticeship!"
           btn_text = "Contact Us"
+          btn_link = "mailto:kam@apprenticeship.io"
         when "employers-top"
           class_type = "mini-banner employers-top"
           h1_text = "For Employers"
@@ -61,6 +66,7 @@
           h1_text = "Looking for More?"
           p_text = "We'd love to connect with you and chat!"
           btn_text = "Contact Us"
+          btn_link = "mailto:kam@apprenticeship.io"
         when "educators-top"
           class_type = "mini-banner educators-top"
           h1_text = "For Educators"
@@ -70,6 +76,7 @@
           h1_text = "Looking for More?"
           p_text = "We'd love to connect with you and chat!"
           btn_text = "Contact Us"
+          btn_link = "mailto:kam@apprenticeship.io"
       end %>
 <div class="<%= class_type %>" style="">
   <div class="mini-container">
@@ -79,8 +86,10 @@
     <p>
       <%= p_text %>
     </p>
-    <button>
-      <%= btn_text %>
-    </button>
+    <%if btn_text%>
+      <a target="_blank" href=<%= btn_link %> class="mini-banner-btn">
+        <%= btn_text %>
+      </a>
+    <%end%>
   </div>
 </div>
