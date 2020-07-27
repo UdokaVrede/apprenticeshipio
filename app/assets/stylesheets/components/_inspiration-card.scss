@@ -1,0 +1,32 @@
+.inspiration-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inspiration {
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 138px;
+  min-width: 100px;
+  height: 138px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  margin: 50px;
+  background-color: $purple;
+}
+
+.inspiration > i > p {
+  position: absolute;
+  text-decoration: none;
+  color: $white;
+  font-family: $body-font;
+  font-size: 15px;
+  bottom: 0;
+}
+
+.inspiration > i {
+  position: relative;
+}
