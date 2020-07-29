@@ -1,32 +1,50 @@
-.inspiration-container {
-  display: flex;
-  flex-wrap: wrap;
+.inspiration-card-container {
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-bottom: 100px;
 }
 
-.inspiration {
-  padding: 0;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 138px;
-  min-width: 100px;
-  height: 138px;
-  border-radius: 15px;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
-  margin: 50px;
-  background-color: $purple;
-}
-
-.inspiration > i > p {
-  position: absolute;
-  text-decoration: none;
-  color: $white;
-  font-family: $body-font;
-  font-size: 15px;
-  bottom: 0;
-}
-
-.inspiration > i {
+.inspiration-card {
+  display: inline-block;
   position: relative;
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  overflow:hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  margin: 30px;
+}
+
+.inspiration-card a:hover {
+  opacity: .15;
+}
+
+.inspiration-info {
+  color: $white;
+  font-family: $headers-font;
+}
+
+.inspiration-small-level {
+  padding-top: 25px;
+}
+
+.inspiration-medium-level {
+  padding-top: 15px;
+}
+
+.inspiration-large-level {
+  padding-top: 10px;
+}
+
+.inspiration-small-font {
+  font-size: 12px;
+}
+
+.inspiration-smaller-font {
+  font-size:10px;
+}
+
+.inspiration-tiny-font {
+  font-size: 9px;
 }

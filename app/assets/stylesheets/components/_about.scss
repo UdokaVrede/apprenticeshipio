@@ -1,9 +1,13 @@
-.mission-container, .inspiration-container {
-  padding: 75px 250px 150px 250px;
+.mission-container {
+  padding: 100px 250px 50px 250px;
+}
+
+.inspiration-container {
+  padding: 100px 250px 50px 250px;
 }
 
 .story-container {
-  padding: 150px 250px 0px 250px;
+  padding: 100px 250px 0px 250px;
 }
 
 .mission-title {
@@ -38,7 +42,7 @@
   color: $white;
   font-size: 20px;
   font-family: $body-font;
-  padding: 100px;
+  padding: 75px;
   border-radius: 15px;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
 }
@@ -53,7 +57,7 @@
   font-size: 40px;
   text-align: center;
   padding: 15px;
-  padding-bottom: 0px;
+  padding-bottom: 75px;
 }
 
 .story {
@@ -66,12 +70,14 @@
 }
 
 .inspiration {
-  background-color: $purple;
+  margin-left: 175px;
+  margin-right: 175px;
+  background-color: $plum;
   color: $white;
+  font-size: 15px;
   font-family: $body-font;
-  padding: 50px;
+  text-align: center;
+  padding: 48px;
   border-radius: 15px;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
 }
-
-
