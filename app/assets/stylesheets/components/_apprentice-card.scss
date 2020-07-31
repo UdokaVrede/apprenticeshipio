@@ -11,77 +11,13 @@
 }
 
 .apprentice-profile-img {
-  height: 70%;
+  object-fit: cover;
+  bottom: 25px;
+  left: 0px;
+  width: 100%
 }
 
-.apprentice-description-bk-red {
-  background-color: $medium-red;
-  border-radius: 30px;
-  position: absolute;
-  top: 55%;
-  left: -5px;
-  height: 65%;
-  width: 108%;
-  transform: skew(19deg, -9deg);
-}
-
-.apprentice-description-bk-blue {
-  background-color: $blue;
-  border-radius: 30px;
-  position: absolute;
-  top: 55%;
-  left: -5px;
-  height: 65%;
-  width: 108%;
-  transform: skew(19deg, -9deg);
-}
-
-.apprentice-description-bk-teal {
-  background-color: $teal;
-  border-radius: 30px;
-  position: absolute;
-  top: 55%;
-  left: -5px;
-  height: 65%;
-  width: 108%;
-  transform: skew(19deg, -9deg);
-}
-
-.apprentice-description-bk-purple {
-  background-color: $purple;
-  border-radius: 30px;
-  position: absolute;
-  top: 55%;
-  left: -5px;
-  height: 65%;
-  width: 108%;
-  transform: skew(19deg, -9deg);
-}
-
-.apprentice-description-bk-orange {
-  background-color: $orange;
-  border-radius: 30px;
-  position: absolute;
-  top: 55%;
-  left: -5px;
-  height: 65%;
-  width: 108%;
-  transform: skew(19deg, -9deg);
-}
-
-.apprentice-description-bk-plum {
-  background-color: $plum;
-  border-radius: 30px;
-  position: absolute;
-  top: 55%;
-  left: -5px;
-  height: 65%;
-  width: 108%;
-  transform: skew(19deg, -9deg);
-}
-
-.apprentice-description-bk-medium-blue {
-  background-color: $medium-blue;
+.apprentice-description-bk {
   border-radius: 30px;
   position: absolute;
   top: 55%;
@@ -155,18 +91,12 @@
 
 .apprentice-btn {
   position: absolute;
-  background-color: $hover-gray;
-  font-family: $headers-font;
+  font-size: 25px;
   right: 30px;
   bottom: 10%;
-  padding: 6px 12px;
+  padding: 10px 10px 0px 10px;
+  box-shadow: 10px 10px 30px rgba(0.5, 0.5, 0.5, 0.5);
   border-radius: 5px;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
-}
-
-.apprentice-btn a {
-  color: $black;
-  font-weight: bold;
 }
 
 .apprentice-info {
@@ -176,18 +106,4 @@
   line-height: 0;
   padding-top: 40px;
   font-family: $body-font;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-}
-.apprentice-btn i:before {
-  width: 14px;
-  height: 14px;
-  position: fixed;
-  background-color: $medium-purple;
-  padding: 10px;
-  top: 5px;
-  right: 5px;
 }
