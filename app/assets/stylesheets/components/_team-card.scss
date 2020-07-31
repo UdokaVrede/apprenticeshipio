@@ -21,9 +21,7 @@
 }
 
 .team-member-profile-img {
-  object-fit: cover;
-  height: 70%;
-  width: 100%;
+  width: 100%
 }
 
 .team-member-description-bk {
@@ -36,22 +34,45 @@
   transform: skew(19deg, -9deg);
 }
 
-.team-member-name {
+.team-member-name-short {
   position: absolute;
   color: $white;
   font-family: $headers-font;
   font-size: 18px;
   left: 125px;
-  bottom: 20%;
+  bottom: 25%;
+  line-height: 0;
+}
+
+.team-member-name-long {
+  position: absolute;
+  color: $white;
+  font-family: $headers-font;
+  font-size: 18px;
+  left: 100px;
+  bottom: 25%;
+  line-height: 0;
+}
+
+.team-member-name-extra-long {
+  position: absolute;
+  color: $white;
+  font-family: $headers-font;
+  font-size: 18px;
+  left: 80px;
+  bottom: 25%;
+  line-height: 0;
 }
 
 .team-member-btn {
   position: absolute;
   right: 15px;
   bottom: 15px;
-  padding: 3px 6px;
+  padding: 6px 6px 3px 6px;
   color: $white;
-  box-shadow: 10px 10px 30px rgba(0.7, 0.7, 0.7, 0.7);
+  text-decoration: none;
+  box-shadow: 10px 10px 30px rgba(0.5, 0.5, 0.5, 0.5);
+  border-radius: 5px;
 }
 
 .team-member-info {
@@ -59,7 +80,7 @@
   position: absolute;
   color: $white;
   left: 15px;
+  bottom: 5%;
   line-height: 0;
-  padding-top: 20px;
   font-family: $body-font;
 }
