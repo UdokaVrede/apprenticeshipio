@@ -1,28 +1,37 @@
 .divider {
-  font-family: $headers-font;
-  height: 75px;
-  padding: 0px 25px;
-  background-color: $blue;
   display: flex;
-  align-items: center;
+  flex: row;
+  justify-content: space-around;
+  font-family: $headers-font;
+  padding: 35px 150px 35px 150px;
+  background-color: $purple;
+}
+
+.slack-signup, .mailchimp-signup, .mailchimp-signup > form {
+  display: flex;
+  flex: row;
   justify-content: space-between;
 }
 
-.slack-button, .mailchimp-button {
-  color: white;
+.slack-signup-button, .mailchimp-signup-button {
+  background-color: $light-purple;
+  color: $white;
   padding: 6px 12px;
   border-radius: 5px;
-  background-color: $navy;
   transition: background 0.3s ease;
   font-family: $headers-font;
+  font-size: 18px;
   border-style: none;
+  text-decoration: none;
+  box-shadow: 10px 10px 30px rgba(0.5, 0.5, 0.5, 0.5);
 }
 
-.mailchimp-signup {
-  align-items: center;
+.mailchimp-signup-button {
+  margin-left: 10px;
 }
 
-// .fa-mailchimp, .fa-slack {
-//   font-size: 32px;
-//   color: $navy;
-// }
+#divider-slack, #divider-mailchimp {
+  color: $white;
+  font-size: 40px;
+  margin-right: 20px;
+}
