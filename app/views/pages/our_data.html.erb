@@ -1,8 +1,25 @@
 <%= render "shared/navbar" %>
-
 <div class="parallax-body">
+
+<!-- Header - Apprentices, Companies, Cities -->
+
+<div class="regular-wrapper-header">
+  <h1 class="content-title-1">So you want</h1>
+  <h1 class="content-title-2">to learn</h1>
+  <h1 class="content-title-3">about</h1>
+  <h1 class="content-title-4">apprenticeships</h1>
+  <h1 class="content-title-5">in tech?</h1>
+</div>
+<div class="regular-wrapper-mini-header">
+  <h2 class="">Awesome Apprentices</h2>
+  <h2 class="">Cool Companies</h2>
+  <h2 class="">Clever Cities</h2>
+</div>
+
 <!--   Navbar #1 -->
-  <div class="parallax-navbar"><span>Apprentices</span></div>
+  <div class="parallax-navbar">
+    <span>Apprentices</span>
+  </div>
 
 <!-- Apprentice Statistic #1 -->
     <div class="regular-wrapper-usa">
@@ -21,13 +38,20 @@
         <h1 class="education-number">
           <%=@perc_aprnts_gt_4_degree%>%
         </h1><br><h3>of apprentices have <br>a 4 year undergraduate degree.</h3><br>
+      </div>
+    </div>
+
+<!-- Apprentice Statistic #3  -->
+
+    <div class="regular-wrapper-education">
+      <div class="content-education">
         <h1 class="education-number">
           <%=@perc_aprnts_bootcamp%>%
         </h1><br><h3>of apprentices attended<br>a coding bootcamp.</h3><br>
       </div>
     </div>
 
-<!-- Apprentice Statistic #3  -->
+<!-- Apprentice Statistic #4  -->
 
     <div class="regular-wrapper-careers">
 <!--       Insert images below here -->
@@ -44,16 +68,23 @@
       </div>
     </div>
 
-<!-- Apprentice Statistic #4  -->
+<!-- Apprentice Statistic #5  -->
 
-    <div class="parallax-wrapper-identity">
-      <div class="content-identity">
-        <h3> We estimate around</h3><h1 class="identity-number"> <%=@perc_aprnts_ugi%>%</h1><h3> of apprentices come from an underrepresented gender identity.</h3><br>
-        <h3> We estimate around</h3><h1 class="identity-number"> <%=@perc_aprnts_uri%>%</h1><h3> of apprentices come from an underrepresented racial identity.</h3><br></p>
+    <div class="parallax-wrapper-gender">
+      <div class="content-gender">
+        <h3> We estimate more than </h3><h1 class="gender-number"> <%=@perc_aprnts_ugi%>%</h1><h3> of apprentices come from an underrepresented gender identity.</h3><br>
       </div>
     </div>
 
-<!-- Apprentice Statistic #5  -->
+<!-- Apprentice Statistic #6  -->
+
+    <div class="regular-wrapper-race">
+      <div class="content-race">
+        <h3> We estimate more than </h3><h1 class="race-number"> <%=@perc_aprnts_uri%>%</h1><h3> of apprentices come from an underrepresented racial identity.</h3><br></p>
+      </div>
+    </div>
+
+<!-- Apprentice Statistic #7  -->
 
     <div class="regular-wrapper-surprises">
 <!--       Insert images below here -->
