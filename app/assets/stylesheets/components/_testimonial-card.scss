@@ -1,3 +1,17 @@
+.pinterest-loop {
+  float: right;
+}
+
+.linkedin-loop {
+  float: right;
+  color: $blue;
+}
+
+.slack-loop {
+  float: left;
+  color: $purple;
+}
+
 .testimonial-linkedin, .testimonial-pinterest, .testimonial-slack {
   background-color: $white;
   border-radius: 20px;
