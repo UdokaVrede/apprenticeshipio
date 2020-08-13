@@ -4,29 +4,52 @@
 <!-- Header - Apprentices, Companies, Cities -->
 
 <div class="regular-wrapper-header">
-  <h1 class="content-title-1">So you want to</h1>
+  <h1 class="content-title-1">So You Want To</h1>
   <h1 class="content-title-2">learn</h1>
   <h1 class="content-title-1">about</h1>
   <h1 class="content-title-3">apprenticeships</h1>
   <h1 class="content-title-1">in</h1>
-  <h1 class="content-title-3">tech?</h1>
+  <h1 class="content-title-3">Tech?</h1>
 </div>
 <div class="regular-wrapper-mini-header">
-  <h2 class="">Awesome Apprentices</h2>
-  <h2 class="">Cool Companies</h2>
-  <h2 class="">Clever Cities</h2>
+  <center>
+  <div class="apprentices-card">
+    <div  class="apprentices-info">
+      Awesome Apprentices
+      <div class="apprentices-icon">
+        <i class="fas fa-user-astronaut"></i>
+      </div>
+    </div>
+  </div>
+  <div class="companies-card">
+    <div  class="companies-info">
+      Cool Companies
+      <div class="companies-icon">
+        <i class="fas fa-laptop-code"></i>
+      </div>
+    </div>
+  </div>
+  <div class="cities-card">
+    <div class="cities-info">
+      Clever Cities
+      <div class="cities-icon">
+        <i class="fas fa-city"></i>
+      </div>
+    </div>
+  </div>
+  </center>
 </div>
 
-<!--   Navbar #1 -->
-  <div class="parallax-navbar">
-    <span>Apprentices</span>
+<!-- Apprentice Navbar #1 -->
+  <div class="parallax-apprentices-navbar">
+    <span>Awesome Apprentices</span>
   </div>
 
 <!-- Apprentice Statistic #1 -->
     <div class="regular-wrapper-usa">
       <img src="https://i.imgur.com/xEEnl8e.png" class="floating-image-usa" alt="United States Map" />
       <div class="content-usa">
-        <h3>In the United States, we are tracking</h3>
+        <h3>In the United States, this project tracks</h3>
         <h1 class="usa-number"><%= @total_aprnts%></h1>
         <br><h3>Apprentice Software Engineers.</h3>
       </div>
@@ -106,10 +129,12 @@
       </div>
     </div>
 
-<!--   Navbar #2 -->
-  <div class="parallax-navbar"><span>Companies</span></div>
+<!--  Company Navbar #2 -->
+  <div class="parallax-companies-navbar">
+    <span>Cool Companies</span>
+  </div>
 
-<!-- Company Statistic #1 -->
+<!-- Company Statistic #8 -->
     <div class="regular-wrapper-usa">
       <img src="https://i.imgur.com/xEEnl8e.png" class="floating-image-usa" alt="United States Map" />
       <div class="content-usa">
@@ -119,7 +144,7 @@
       </div>
     </div>
 
-<!-- Company Statistic #2 -->
+<!-- Company Statistic #9 -->
 
     <div class="parallax-wrapper-salary">
       <div class="content-salary">
@@ -127,7 +152,7 @@
       </div>
     </div>
 
-<!-- Company Statistic #3 -->
+<!-- Company Statistic #10 -->
 
     <div class="regular-wrapper-start">
       <img src="" class="floating-image-start" alt="Calendar" />
@@ -136,7 +161,7 @@
       </div>
     </div>
 
-<!-- Company Statistic #4 -->
+<!-- Company Statistic #11 -->
 
     <div class="parallax-wrapper-length">
       <div class="content-length">
@@ -144,7 +169,7 @@
       </div>
     </div>
 
-<!-- Company Statistic #5 -->
+<!-- Company Statistic #12 -->
 
     <div class="regular-wrapper-retention">
       <img src="" class="floating-image-usa" alt="" />
@@ -154,7 +179,7 @@
       </div>
     </div>
 
-<!-- Company Statistic #6 -->
+<!-- Company Statistic #13 -->
 
     <div class="parallax-wrapper-size">
       <div class="content-size">
@@ -163,7 +188,7 @@
       </div>
     </div>
 
-<!-- Company Statistic #7 -->
+<!-- Company Statistic #14 -->
 
     <div class="regular-wrapper-median">
       <img src="" class="floating-image-median" alt="" />
@@ -172,7 +197,7 @@
       </div>
     </div>
 
-<!-- Company Statistic #8 -->
+<!-- Company Statistic #15 -->
 
     <div class="parallax-wrapper-annual">
       <div class="content-annual">
@@ -180,7 +205,7 @@
       </div>
     </div>
 
-<!-- Company Statistic #9 -->
+<!-- Company Statistic #16 -->
 
     <div class="regular-wrapper-most">
       <img src="" class="floating-image-most" alt="" />
@@ -189,16 +214,17 @@
       </div>
     </div>
 
-
-<!--   Navbar #2 -->
-<div class="parallax-navbar"><span>Tech Industry</span></div>
+<!--  Cities Navbar #3 -->
+<div class="parallax-cities-navbar">
+  <span>Clever Cities</span>
+</div>
 
 <!-- Industry Statistic #11 -->
 
     <div class="regular-wrapper-most">
       <img src="" class="floating-image-most" alt="" />
       <div class="content-most">
-        <h3>According to ______, x # of software engineering positions go unfilled each year and x # more open each year.</h3><br>
+        <h3>In the next 5 years, 150 million new jobs will be created in technology globally, according to the LinkedIn Economic Graph. Nearly 100 million of those jobs are forecasted to be Software Engineers.</h3><br>
       </div>
     </div>
 
@@ -206,7 +232,7 @@
 
     <div class="parallax-wrapper-annual">
       <div class="content-annual">
-        <h3></h3>
+        <h3>Of the top 10 most in-demand jobs identified by Microsoft during COVID-19 and beyond, software engineering ranked highest for greatest number of job openings, steady growth over time, paying a livable wage, and skills that can be developed online in quarantine.</h3>
       </div>
     </div>
 
@@ -215,7 +241,7 @@
     <div class="regular-wrapper-most">
       <img src="" class="floating-image-most" alt="" />
       <div class="content-most">
-        <h3></h3>
+        <h3>Broad public and private investments in education and workforce development are being discussed everywhere.</h3>
       </div>
     </div>
 
@@ -223,7 +249,7 @@
 
     <div class="parallax-wrapper-annual">
       <div class="content-annual">
-        <h3></h3>
+        <h3>So what are the best cities to study and train as a non-traditional software engineer?</h3>
       </div>
     </div>
 
@@ -232,20 +258,69 @@
     <div class="regular-wrapper-most">
       <img src="" class="floating-image-most" alt="" />
       <div class="content-most">
-        <h3></h3>
+        <h3>Right now, Chicago has the most companies participating in software engineering apprenticeship.</h3>
       </div>
     </div>
 
+<!-- Industry Statistic #16 -->
 
+    <div class="parallax-wrapper-annual">
+      <div class="content-annual">
+        <h3>Companies in the Greater Seattle area hire the most non-traditional engineers each year. </h3>
+      </div>
+    </div>
 
-<br>
-If each software company with more than 100 employees in New York City hired 10 apprentices per year…<br>
-We would welcome and train x # of new Software Engineers into the tech industry each year.<br>
-<br>
-If each software company with more than 100 employees in San Francisco hired 10 apprentices per year…<br>
-We would welcome and train x # of new Software Engineers into the tech industry each year.<br>
+<!-- Industry Statistic #17 -->
 
+    <div class="regular-wrapper-most">
+      <img src="" class="floating-image-most" alt="" />
+      <div class="content-most">
+        <h3>The San Francisco Bay Area holds the most potential for companies who could train more software engineering apprentices.</h3>
+      </div>
+    </div>
 
-</div>
+<!-- Industry Statistic #18 -->
+
+    <div class="parallax-wrapper-annual">
+      <div class="content-annual">
+        <h3>If each company with >100 employees in each city (Interactive) </h3>
+      </div>
+    </div>
+
+<!-- Learn More Footer -->
+
+  <div class="regular-wrapper-footer">
+      <div class="content-title-2">
+      ...Still Want More?
+      </div>
+  </div>
+    <div class="regular-wrapper-mini-footer">
+      <center>
+        <div class="apprentices-card">
+          <div  class="apprentices-info">
+            Join our Slack
+            <div class="apprentices-icon">
+              <i class="fas fa-user-astronaut"></i>
+            </div>
+          </div>
+        </div>
+        <div class="companies-card">
+          <div  class="companies-info">
+            Explore Resources
+            <div class="companies-icon">
+            <i class="fas fa-laptop-code"></i>
+            </div>
+          </div>
+        </div>
+        <div class="cities-card">
+          <div class="cities-info">
+            Subscribe
+            <div class="cities-icon">
+            <i class="fab fa-mailchimp"></i>
+            </div>
+          </div>
+        </div>
+      </center>
+    </div>
 
   <%= render "shared/footer" %>

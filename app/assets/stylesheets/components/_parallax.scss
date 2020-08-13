@@ -8,7 +8,7 @@
 
 // Header - Apprentices, Companies, Cities
 
-.regular-wrapper-header {
+.regular-wrapper-header, .regular-wrapper-footer {
   width: 100vw;
   height:100vh;
   padding-top:20vh;
@@ -42,12 +42,100 @@
   margin-left: 50px;
 }
 
+.regular-wrapper-mini-header, .regular-wrapper-mini-footer {
+  padding: 50px 25px 50px 25px;
+}
+
+.apprentices-card {
+  display: inline-block;
+  position: relative;
+  width: 258px;
+  min-width: 202.5px;
+  height: 258px;
+  border-radius: 15px;
+  overflow:hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  margin: 50px;
+  background-color: $teal;
+  background-image: url("https://i.imgur.com/Ti2wx5P.png");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.apprentices-info {
+  font-size: 30px;
+  color: $white;
+  margin: 32px;
+  font-family: $numbers-font;
+}
+
+.apprentices-icon {
+  font-size: 75px;
+}
+
+.companies-card {
+  display: inline-block;
+  position: relative;
+  width: 258px;
+  min-width: 202.5px;
+  height: 258px;
+  border-radius: 15px;
+  overflow:hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  margin: 50px;
+  background-color: $blue;
+  background-image: url("https://i.imgur.com/yahdbU0.png");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.companies-info {
+  font-size: 30px;
+  color: $white;
+  margin: 32px;
+  font-family: $numbers-font;
+}
+
+.companies-icon {
+  font-size: 75px;
+}
+
+.cities-card {
+  display: inline-block;
+  position: relative;
+  width: 258px;
+  min-width: 202.5px;
+  height: 258px;
+  border-radius: 15px;
+  overflow:hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  margin: 50px;
+  background-color: $purple;
+  background-image: url("https://i.imgur.com/pnVfO8j.png");
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cities-info {
+  font-size: 30px;
+  color: $white;
+  margin: 32px;
+  font-family: $numbers-font;
+}
+
+.cities-icon {
+  font-size: 75px;
+}
+
 // 1st Navbar - Apprentices
 
-.parallax-navbar span {
-  font-family: $headers-font;
-  color: $blue;
-  font-size: 100px;
+.parallax-apprentices-navbar span {
+  font-family: $numbers-font;
+  color: $teal;
+  font-size: 75px;
   margin: 100px;
 }
 
@@ -298,9 +386,20 @@
   text-align: center;
 }
 
+// 2nd Navbar - Companies
+
+.parallax-companies-navbar span {
+  font-family: $numbers-font;
+  color: $blue;
+  font-size: 75px;
+  margin: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 // 1st Company Statistic uses same CSS as 1st Apprentice Statistic
 
-// 6th Statistic - Salary
+// 6th Statistic - Company Salary
 
 .parallax-wrapper-salary {
   width: 100vw;
@@ -340,7 +439,7 @@
   color: $teal;
 }
 
-// 7th Statistic -
+// 7th Statistic - Company Start Year
 
 .regular-wrapper-start {
   width: 100vw;
@@ -368,7 +467,7 @@
   text-align: center;
 }
 
-// 8th Statistic -
+// 8th Statistic - Company Apprenticeship Length
 
 .parallax-wrapper-length {
   width: 100vw;
@@ -408,7 +507,7 @@
   color: $orange;
 }
 
-// 9th Statistic -
+// 9th Statistic - Company Apprenticeship Retention
 
 .regular-wrapper-retention {
   width: 100vw;
@@ -436,7 +535,7 @@
   text-align: center;
 }
 
-// 10th Statistic -
+// 10th Statistic - Company Biggest and Smallest
 
 .parallax-wrapper-size {
   width: 100vw;
@@ -476,7 +575,7 @@
   color: $orange;
 }
 
-// 11th Statistic -
+// 11th Statistic - Median Size Company
 
 .regular-wrapper-median {
   width: 100vw;
@@ -504,7 +603,7 @@
   text-align: center;
 }
 
-// 12th Statistic -
+// 12th Statistic - Most Apprentices Per Year
 
 .parallax-wrapper-annual {
   width: 100vw;
@@ -544,7 +643,7 @@
   color: $orange;
 }
 
-// 13th Statistic -
+// 13th Statistic - Most Apprentices Trained Total
 
 .regular-wrapper-most {
   width: 100vw;
@@ -572,3 +671,21 @@
   text-align: center;
 }
 
+// 3rd Navbar - Cities
+
+.parallax-cities-navbar span {
+  font-family: $numbers-font;
+  color: $purple;
+  font-size: 75px;
+  margin: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.regular-wrapper-footer {
+
+}
+
+.regular-wrapper-mini-footer {
+
+}
