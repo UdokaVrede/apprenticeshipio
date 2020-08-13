@@ -1,12 +1,14 @@
       <% case type
         when "home-top"
           class_type = "mini-banner home-top"
+          img_top = ""
           h1_text = "What is an Apprenticeship?"
           p_text = "An apprenticeship is a 6 to 12 month (or longer!) paid training program aimed at developing mastery in specialized, high demand skills. Apprenticeships are hands-on, state of the art learning environments guided and supported by an advanced person of the trade or craft. You remember the Medieval blacksmiths? That's right, this path has been proven for over 500 years."
         when "home-bottom"
           class_type = "mini-banner home-bottom"
           h1_text = "In the News"
           p_text = "Learn more about apprenticeships in technology happening all around the U.S."
+          img_bottom = ""
         when "about-top"
           class_type = "mini-banner about-top"
           h1_text = "About Us"
@@ -80,6 +82,9 @@
       end %>
 <div class="<%= class_type %>" style="">
   <div class="mini-container">
+    <%if img_top %>
+      <%= img_top %>
+    <%end%>
     <h1>
       <%= h1_text %>
     </h1>
@@ -90,6 +95,9 @@
       <a target="_blank" href=<%= btn_link %> class="mini-banner-btn">
         <%= btn_text %>
       </a>
+    <%if img_bottom %>
+      <%= img_bottom %>
+    <%end%>
     <%end%>
   </div>
 </div>
