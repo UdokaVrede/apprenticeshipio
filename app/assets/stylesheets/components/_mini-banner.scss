@@ -105,6 +105,11 @@
   padding: 6px 12px;
   border-radius: 5px;
   background: $teal;
-  transition: background 0.3s ease;
+  transition: all .1s ease-in-out;
+  &:hover {
+    color: white;
+    text-decoration: none;
+    transform: scale(1.1);
+  }
   font-family: $headers-font;
 }
