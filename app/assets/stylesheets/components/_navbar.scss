@@ -25,12 +25,23 @@
   font-family: $headers-font;
   color: $black;
   float: center;
+  border-radius: 5px;
+  &:hover {
+    background-color: $hover-gray;
+  }
+  &.dropdown-toggle {
+    cursor: pointer;
+  }
 }
 
 .navbar-brand img {
   width: 70px;
   height: 60px;
   float: left;
+  transition: all .2s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 .btn-flat {
@@ -46,7 +57,21 @@
   background: $teal;
   color: white;
 }
-
+.dropdown-menu {
+  animation-name: slidenavAnimation;
+  animation-duration:.3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+@keyframes slidenavAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .dropdown-item {
   font-family: $headers-font;
 }
