@@ -36,6 +36,10 @@ class PagesController < ApplicationController
     @co_most_apprentices_tracked = aprnts_per_co.sort_by { |k, v| -v }.first
 
     @companies_per_employee = companies_per_employee.sort_by { |k, v| -v }
+
+    stats = StatsCalculator.new
+    @companies_gt_100_employees = stats.get_companies_gt_100_employees
+
   end
 
   def hall_of_fame

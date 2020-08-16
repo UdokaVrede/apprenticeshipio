@@ -1,44 +1,44 @@
-<%= render "shared/navbar" %>
 <div class="parallax-body">
+<%= render "shared/navbar" %>
 
 <!-- Header - Apprentices, Companies, Cities -->
 
-<div class="regular-wrapper-header">
-  <h1 class="content-title-1">So You Want To</h1>
-  <h1 class="content-title-2">learn</h1>
-  <h1 class="content-title-1">about</h1>
-  <h1 class="content-title-3">apprenticeships</h1>
-  <h1 class="content-title-1">in</h1>
-  <h1 class="content-title-3">Tech?</h1>
-</div>
-<div class="regular-wrapper-mini-header">
-  <center>
-  <div class="apprentices-card">
-    <div  class="apprentices-info">
-      Awesome Apprentices
-      <div class="apprentices-icon">
-        <i class="fas fa-user-astronaut"></i>
+  <div class="regular-wrapper-header">
+    <h1 class="content-title-1">So You Want To</h1>
+    <h1 class="content-title-2">learn</h1>
+    <h1 class="content-title-1">about</h1>
+    <h1 class="content-title-3">apprenticeships</h1>
+    <h1 class="content-title-1">in</h1>
+    <h1 class="content-title-3">Tech?</h1>
+  </div>
+  <div class="regular-wrapper-mini-header">
+    <center>
+    <div class="apprentices-card">
+      <div  class="apprentices-info">
+        Awesome Apprentices
+        <div class="apprentices-icon">
+          <i class="fas fa-user-astronaut"></i>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="companies-card">
-    <div  class="companies-info">
-      Cool Companies
-      <div class="companies-icon">
-        <i class="fas fa-laptop-code"></i>
+    <div class="companies-card">
+      <div  class="companies-info">
+        Cool Companies
+        <div class="companies-icon">
+          <i class="fas fa-laptop-code"></i>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="cities-card">
-    <div class="cities-info">
-      Clever Cities
-      <div class="cities-icon">
-        <i class="fas fa-city"></i>
+    <div class="cities-card">
+      <div class="cities-info">
+        Clever Cities
+        <div class="cities-icon">
+          <i class="fas fa-city"></i>
+        </div>
       </div>
     </div>
+    </center>
   </div>
-  </center>
-</div>
 
 <!-- Apprentice Navbar #1 -->
   <div class="parallax-apprentices-navbar">
@@ -46,88 +46,88 @@
   </div>
 
 <!-- Apprentice Statistic #1 -->
-    <div class="regular-wrapper-usa">
-      <img src="https://i.imgur.com/xEEnl8e.png" class="floating-image-usa" alt="United States Map" />
-      <div class="content-usa">
-        <h3>In the United States, this project tracks</h3>
-        <h1 class="usa-number"><%= @total_aprnts%></h1>
-        <br><h3>Apprentice Software Engineers.</h3>
-      </div>
+  <div class="regular-wrapper-usa">
+    <img src="https://i.imgur.com/xEEnl8e.png" class="floating-image-usa" alt="United States Map" />
+    <div class="content-usa">
+      <h3>In the United States, this project tracks</h3>
+      <h1 class="usa-number"><%= @total_aprnts%></h1>
+      <br><h3>Apprentice Software Engineers.</h3>
     </div>
+  </div>
 
 <!-- Apprentice Statistic #2  -->
 
-    <div class="parallax-wrapper-education">
-      <div class="content-education">
-        <h1 class="education-number">
-          <%=@perc_aprnts_gt_4_degree%>%
-        </h1><br><h3>of apprentices have <br>a 4 year undergraduate degree.</h3><br>
-      </div>
+  <div class="parallax-wrapper-education">
+    <div class="content-education">
+      <h1 class="education-number">
+        <%=@perc_aprnts_gt_4_degree%>%
+      </h1><br><h3>of apprentices have <br>a 4 year undergraduate degree.</h3><br>
     </div>
+  </div>
 
 <!-- Apprentice Statistic #3  -->
 
-    <div class="regular-wrapper-education">
-      <div class="content-education">
-        <h1 class="education-number">
-          <%=@perc_aprnts_bootcamp%>%
-        </h1><br><h3>of apprentices attended<br>a coding bootcamp.</h3><br>
-      </div>
+  <div class="regular-wrapper-education">
+    <div class="content-education">
+      <h1 class="education-number">
+        <%=@perc_aprnts_bootcamp%>%
+      </h1><br><h3>of apprentices attended<br>a coding bootcamp.</h3><br>
     </div>
+  </div>
 
 <!-- Apprentice Statistic #4  -->
 
-    <div class="regular-wrapper-careers">
+  <div class="regular-wrapper-careers">
 <!--       Insert images below here -->
-      <img src="" class="floating-image-careers" alt="" />
-      <img src="" class="floating-image-careers" alt="" />
-      <img src="" class="floating-image-careers" alt="" />
-      <img src="" class="floating-image-careers" alt="" />
-      <img src="" class="floating-image-careers" alt="" />
-      <div class="content-careers">
-        <h3>
-          The top 5 most common<br> previous careers were...<br><%=@top_five_prev_careers%>
-        </h3>
-        </p>
-      </div>
+    <img src="" class="floating-image-careers" alt="" />
+    <img src="" class="floating-image-careers" alt="" />
+    <img src="" class="floating-image-careers" alt="" />
+    <img src="" class="floating-image-careers" alt="" />
+    <img src="" class="floating-image-careers" alt="" />
+    <div class="content-careers">
+      <h3>
+        The top 5 most common<br> previous careers were...<br><%=@top_five_prev_careers%>
+      </h3>
+      </p>
     </div>
+  </div>
 
 <!-- Apprentice Statistic #5  -->
 
-    <div class="parallax-wrapper-gender">
-      <i id="" class="fas fa-venus floating-image-gender"></i>
-      <i id="" class="fas fa-genderless floating-image-gender"></i>
-      <i id="" class="fas fa-neuter floating-image-gender"></i>
-      <i id="" class="fas fa-mars floating-image-gender"></i>
-      <i id="" class="fas fa-transgender floating-image-gender"></i>
-      <i id="" class="fas fa-transgender-alt floating-image-gender"></i>
-      <!-- <div class="mover" data-type="sprite" data-offsety="-700px" data-xposition="765px" data-speed="-2.2" style="background-position: 765px 127.273px;"></div> -->
-      <div class="content-gender">
-        <h3> We estimate more than </h3><h1 class="gender-number"> <%=@perc_aprnts_ugi%>%</h1><h3> of apprentices come from an underrepresented gender identity.</h3><br>
-      </div>
+  <div class="parallax-wrapper-gender">
+    <i id="" class="fas fa-venus floating-image-gender"></i>
+    <i id="" class="fas fa-genderless floating-image-gender"></i>
+    <i id="" class="fas fa-neuter floating-image-gender"></i>
+    <i id="" class="fas fa-mars floating-image-gender"></i>
+    <i id="" class="fas fa-transgender floating-image-gender"></i>
+    <i id="" class="fas fa-transgender-alt floating-image-gender"></i>
+    <!-- <div class="mover" data-type="sprite" data-offsety="-700px" data-xposition="765px" data-speed="-2.2" style="background-position: 765px 127.273px;"></div> -->
+    <div class="content-gender">
+      <h3> We estimate more than </h3><h1 class="gender-number"> <%=@perc_aprnts_ugi%>%</h1><h3> of apprentices come from an underrepresented gender identity.</h3><br>
     </div>
+  </div>
 
 <!-- Apprentice Statistic #6  -->
 
-    <div class="regular-wrapper-race">
-      <div class="content-race">
-        <h3> We estimate more than </h3><h1 class="race-number"> <%=@perc_aprnts_uri%>%</h1><h3> of apprentices come from an underrepresented racial identity.</h3><br></p>
-      </div>
+  <div class="regular-wrapper-race">
+    <div class="content-race">
+      <h3> We estimate more than </h3><h1 class="race-number"> <%=@perc_aprnts_uri%>%</h1><h3> of apprentices come from an underrepresented racial identity.</h3><br></p>
     </div>
+  </div>
 
 <!-- Apprentice Statistic #7  -->
 
-    <div class="regular-wrapper-surprises">
+  <div class="regular-wrapper-surprises">
 <!--       Insert images below here -->
-      <img src="" class="floating-image-surprises" alt="" />
-      <img src="" class="floating-image-surprises" alt="" />
-      <img src="" class="floating-image-surprises" alt="" />
-      <div class="content-surprises">
-       <h3> An apprentice at Uber was a former professional dancer. <br>
-        An apprentice at Pinterest was a former musician. <br>
-        An apprentice at LinkedIn was a former personal trainer. <br></h3>
-      </div>
+    <img src="" class="floating-image-surprises" alt="" />
+    <img src="" class="floating-image-surprises" alt="" />
+    <img src="" class="floating-image-surprises" alt="" />
+    <div class="content-surprises">
+      <h3> An apprentice at Uber was a former professional dancer. <br>
+      An apprentice at Pinterest was a former musician. <br>
+      An apprentice at LinkedIn was a former personal trainer. <br></h3>
     </div>
+  </div>
 
 <!--  Company Navbar #2 -->
   <div class="parallax-companies-navbar">
@@ -135,84 +135,84 @@
   </div>
 
 <!-- Company Statistic #8 -->
-    <div class="regular-wrapper-usa">
-      <img src="https://i.imgur.com/xEEnl8e.png" class="floating-image-usa" alt="United States Map" />
-      <div class="content-usa">
-        <h3>In the United States, we are tracking</h3>
-        <h1 class="usa-number"><%=@total_companies%></h1>
-        <br><h3>companies with software engineering apprenticeships.</h3>
-      </div>
+  <div class="regular-wrapper-usa">
+    <img src="https://i.imgur.com/xEEnl8e.png" class="floating-image-usa" alt="United States Map" />
+    <div class="content-usa">
+      <h3>In the United States, we are tracking</h3>
+      <h1 class="usa-number"><%=@total_companies%></h1>
+      <br><h3>companies with software engineering apprenticeships.</h3>
     </div>
+  </div>
 
 <!-- Company Statistic #9 -->
 
-    <div class="parallax-wrapper-salary">
-      <div class="content-salary">
-        <h3>Average compensation in a software engineering apprenticeship is between…</h3> <h1 class="salary-number">$75,000 - $100,000.</h1><br>
-      </div>
+  <div class="parallax-wrapper-salary">
+    <div class="content-salary">
+      <h3>Average compensation in a software engineering apprenticeship is between…</h3> <h1 class="salary-number">$75,000 - $100,000.</h1><br>
     </div>
+  </div>
 
 <!-- Company Statistic #10 -->
 
-    <div class="regular-wrapper-start">
-      <img src="" class="floating-image-start" alt="Calendar" />
-      <div class="content-usa">
-        <h3>The earliest formal software engineering apprenticeship started in 2008.</h3><br>
-      </div>
+  <div class="regular-wrapper-start">
+    <img src="" class="floating-image-start" alt="Calendar" />
+    <div class="content-usa">
+      <h3>The earliest formal software engineering apprenticeship started in 2008.</h3><br>
     </div>
+  </div>
 
 <!-- Company Statistic #11 -->
 
-    <div class="parallax-wrapper-length">
-      <div class="content-length">
-        <h3>The average apprenticeship length is<br></h3> <h1 class="length-number">7 months.</h1><br>
-      </div>
+  <div class="parallax-wrapper-length">
+    <div class="content-length">
+      <h3>The average apprenticeship length is<br></h3> <h1 class="length-number">7 months.</h1><br>
     </div>
+  </div>
 
 <!-- Company Statistic #12 -->
 
-    <div class="regular-wrapper-retention">
-      <img src="" class="floating-image-usa" alt="" />
-      <div class="content-usa">
-        <h3>80% of apprentices convert to full time roles after their apprenticeship. </h3><br>
-        <h3>90% of apprentices stay a year or more at their company after their apprenticeship. </h3><br>
-      </div>
+  <div class="regular-wrapper-retention">
+    <img src="" class="floating-image-usa" alt="" />
+    <div class="content-usa">
+      <h3>80% of apprentices convert to full time roles after their apprenticeship. </h3><br>
+      <h3>90% of apprentices stay a year or more at their company after their apprenticeship. </h3><br>
     </div>
+  </div>
 
 <!-- Company Statistic #13 -->
 
-    <div class="parallax-wrapper-size">
-      <div class="content-size">
-        <h3>The biggest company running an apprenticeship program is Microsoft, with 100,000 employees. </h3><br>
-        <h3>The smallest company running an apprenticeship program is Viaget, with 13 employees.<br></h3>
-      </div>
+  <div class="parallax-wrapper-size">
+    <div class="content-size">
+      <h3>The biggest company running an apprenticeship program is Microsoft, with 100,000 employees. </h3><br>
+      <h3>The smallest company running an apprenticeship program is Viaget, with 13 employees.<br></h3>
     </div>
+  </div>
 
 <!-- Company Statistic #14 -->
 
-    <div class="regular-wrapper-median">
-      <img src="" class="floating-image-median" alt="" />
-      <div class="content-median">
-        <h3>Of all our companies with software engineering apprenticeships, median company size is 58 employees.<br></h3>
-      </div>
+  <div class="regular-wrapper-median">
+    <img src="" class="floating-image-median" alt="" />
+    <div class="content-median">
+      <h3>Of all our companies with software engineering apprenticeships, median company size is 58 employees.<br></h3>
     </div>
+  </div>
 
 <!-- Company Statistic #15 -->
 
-    <div class="parallax-wrapper-annual">
-      <div class="content-annual">
-        <h3>Microsoft is hiring and training the most software engineer apprentices each year, about 120 apprentices.<br></h3>
-      </div>
+  <div class="parallax-wrapper-annual">
+    <div class="content-annual">
+      <h3>Microsoft is hiring and training the most software engineer apprentices each year, about 120 apprentices.<br></h3>
     </div>
+  </div>
 
 <!-- Company Statistic #16 -->
 
-    <div class="regular-wrapper-most">
-      <img src="" class="floating-image-most" alt="" />
-      <div class="content-most">
-        <h3>thoughtbot is invested the most in software engineering apprenticeships, by number of hired software engineering apprentices.</h3><br>
-      </div>
+  <div class="regular-wrapper-most">
+    <img src="" class="floating-image-most" alt="" />
+    <div class="content-most">
+      <h3>thoughtbot is invested the most in software engineering apprenticeships, by number of hired software engineering apprentices.</h3><br>
     </div>
+  </div>
 
 <!--  Cities Navbar #3 -->
 <div class="parallax-cities-navbar">
@@ -283,9 +283,13 @@
 
     <div class="parallax-wrapper-annual">
       <div class="content-annual">
-        <h3>If each company with >100 employees in each city (Interactive) </h3>
+        <h3>If only the companies with more than 100 employees in 
+        <%=select("cities", "companies_in_city", options_for_select(@companies_gt_100_employees, selected = 'San Francisco Bay Area'), {}, {id: "city-select-input", class: "city-select-input"})%>
+        hired <input id="apprentices-in-company-input" type='number' value=3 min=0 /> apprentices per year, </h3>
+        <h3><span id="city-name"></span> would train <span id="city-yearly-apprentices"></span> new apprentices per year. </h3>
       </div>
     </div>
+
 
 <!-- Learn More Footer -->
 
@@ -294,33 +298,36 @@
       ...Still Want More?
       </div>
   </div>
-    <div class="regular-wrapper-mini-footer">
-      <center>
-        <div class="apprentices-card">
-          <div  class="apprentices-info">
-            Join our Slack
-            <div class="apprentices-icon">
-              <i class="fas fa-user-astronaut"></i>
-            </div>
+  <div class="regular-wrapper-mini-footer">
+    <center>
+      <div class="apprentices-card">
+        <div  class="apprentices-info">
+          Join our Slack
+          <div class="apprentices-icon">
+            <i class="fas fa-user-astronaut"></i>
           </div>
         </div>
-        <div class="companies-card">
-          <div  class="companies-info">
-            Explore Resources
-            <div class="companies-icon">
-            <i class="fas fa-laptop-code"></i>
-            </div>
+      </div>
+      <div class="companies-card">
+        <div  class="companies-info">
+          Explore Resources
+          <div class="companies-icon">
+          <i class="fas fa-laptop-code"></i>
           </div>
         </div>
-        <div class="cities-card">
-          <div class="cities-info">
-            Subscribe
-            <div class="cities-icon">
-            <i class="fab fa-mailchimp"></i>
-            </div>
+      </div>
+      <div class="cities-card">
+        <div class="cities-info">
+          Subscribe
+          <div class="cities-icon">
+          <i class="fab fa-mailchimp"></i>
           </div>
         </div>
-      </center>
-    </div>
+      </div>
+    </center>
+  </div>
 
   <%= render "shared/footer" %>
+</div>
+
+<%= javascript_pack_tag 'our_data' %>
