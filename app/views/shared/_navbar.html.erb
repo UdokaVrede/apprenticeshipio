@@ -1,22 +1,12 @@
-<div class="podcast-header align-items-center">
-  <div class="header-links">
-<!--     <a href=""><i class="fab fa-slack"></i></a> -->
-    <a href="https://github.com/apprenticeshipio"><i class="fab fa-github"></i></a>
-    <a href="https://www.facebook.com/apprenticeshipio"><i class="fab fa-facebook"></i></a>
-    <a href="https://twitter.com/kamrinklauschie"><i class="fab fa-twitter"></i></a>
-    <a href="https://www.linkedin.com/company/18316521/admin/"><i class="fab fa-linkedin"></i></a>
-    <a href="https://open.spotify.com/show/6oU6l4AjnVx2XD7HQeeOcg"><i class="fab fa-spotify"></i></a>
-    <a href="https://medium.com/apprenticeship-io"><i class="fab fa-medium"></i></a>
-    <a href="https://podcasts.apple.com/us/podcast/the-apprenticeship-io-podcast/id1452457373"><i class="fas fa-podcast"></i></a>
-<!--     <a href=""><i class="fab fa-mailchimp"></i></a> -->
-  </div>
-</div>
+<nav class="navbar navbar-expand-lg navbar-apprenticeship">
+  <a class="navbar-brand" href="/home">
+    <img src="https://i.imgur.com/7VSA6VB.png" alt="apprenticeship.io Logo" />
+  </a>
+  <button class="navbar-toggler align-middle" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="navbar-toggler-icon fas fa-bars"></i>
+  </button>
 
-<div class="navbar navbar-expand-sm navbar-apprenticeship">
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <a class="navbar-brand" href="/home">
-      <img src="https://i.imgur.com/7VSA6VB.png" alt="apprenticeship.io Logo" />
-    </a>
     <ul class="navbar-nav">
       <li class="nav-item">
         <%= link_to "About Us", about_us_path, class: "nav-link" %>
@@ -42,5 +32,7 @@
         <!-- link_to "Apply Now", apply_now_path, class: "btn btn-flat" -->
       <!-- </li> -->
     </ul>
+
+    <%= render "shared/social-media-links" %>
   </div>
-</div>
+</nav>

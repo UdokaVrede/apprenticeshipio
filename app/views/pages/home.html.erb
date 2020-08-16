@@ -2,10 +2,13 @@
 <%= render "shared/banner" %>
 <%= render "shared/mini-banner", type: "home-top" %>
 <%= render "shared/divider" %>
-<br><br><br>
-<%= render "shared/testimonial_cards/pinterest-testimonial-card" %>
-<%= render "shared/testimonial_cards/linkedin-testimonial-card" %>
-<%= render "shared/testimonial_cards/slack-testimonial-card" %>
-<br><br><br>
+
+<section class="testimonial-section">
+  <%= render "shared/testimonial_cards/pinterest-testimonial-card" %>
+  <%= render "shared/testimonial_cards/linkedin-testimonial-card" %>
+  <%= render "shared/testimonial_cards/slack-testimonial-card" %>
+</section>
+
+
 <%= render "shared/mini-banner", type: "home-bottom" %>
 <%= render "shared/footer" %>

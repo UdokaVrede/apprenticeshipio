@@ -1,0 +1,23 @@
+.social-media-links {
+  font-size: 24px;
+  border-radius: 4px;
+  padding: 5px 8px 5px 8px;
+  a {
+    padding: 10px;
+    i {
+      transition: all .1s ease-in-out;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+  .fa-slack { color: $purple; }
+  .fa-github { color: $medium-red; }
+  .fa-facebook { color: $orange; }
+  .fa-twitter { color: $teal; }
+  .fa-linkedin { color: $blue; }
+  .fa-spotify { color: $medium-blue; }
+  .fa-medium { color: $navy; }
+  .fa-podcast { color: $medium-purple; }
+}
+

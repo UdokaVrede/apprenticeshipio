@@ -1,28 +1,15 @@
-// FYI: The icon colors for the navbar live in footer CSS right now
-
-.podcast-header {
-  float: right;
-  padding-right: 15px;
-  padding-top: 22px;
-  margin: 5px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
+.navbar-collapse {
+  display: flex;
+  justify-content: space-between;
+  .social-media-links { display: none;}
+  @include media-breakpoint-up(lg) {
+    .social-media-links { display: block;}
+  }
 }
 
-.header-links {
-  font-size: 24px;
-  border-radius: 4px;
-  padding: 5px 8px 5px 8px;
-  a {
-    padding: 10px;
-    i {
-      transition: all .1s ease-in-out;
-      &:hover {
-        transform: scale(1.2);
-      }
-    }
-  }
+.navbar-toggler-icon {
+  color: $medium-purple;
+  height: auto;
 }
 
 .navbar-apprenticeship .nav-link {
@@ -30,17 +17,12 @@
   color: $black;
   float: center;
   border-radius: 5px;
-  &:hover {
-    background-color: $hover-gray;
-  }
-  &.dropdown-toggle {
-    cursor: pointer;
-  }
+  &:hover { background-color: $hover-gray; }
+  &.dropdown-toggle { cursor: pointer; }
 }
 
 .navbar-brand img {
-  width: 70px;
-  height: 60px;
+  width: 4.5rem;
   float: left;
   transition: all .2s ease-in-out;
   &:hover {
@@ -48,19 +30,19 @@
   }
 }
 
-.btn-flat {
-  color: $white;
-  padding: 6px 12px;
-  border-radius: 5px;
-  background: $teal;
-  transition: background 0.3s ease;
-  font-family: $headers-font;
-}
+// .btn-flat {
+//   color: $white;
+//   padding: 6px 12px;
+//   border-radius: 5px;
+//   background: $teal;
+//   transition: background 0.3s ease;
+//   font-family: $headers-font;
+// }
 
-.btn-flat:hover {
-  background: $teal;
-  color: white;
-}
+// .btn-flat:hover {
+//   background: $teal;
+//   color: white;
+// }
 .dropdown-menu {
   animation-name: slidenavAnimation;
   animation-duration:.3s;
