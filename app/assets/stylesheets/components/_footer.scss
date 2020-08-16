@@ -2,34 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   height: 75px;
   padding: 0px 25px;
   font-family: $headers-font;
-}
-
-.footer-links {
-  display: flex;
-  align-items: center;
-}
-
-.footer-links a {
-  color: black;
-  text-decoration: none;
-  font-size: 24px;
-  padding: 0px 10px;
-  i {
-    transition: all .1s ease-in-out;
-    &:hover {
-      transform: scale(1.2);
-    }
+  .footer-mission {
+    font-size: 12px;
+  }  
+  .footer-copyright {
+    font-size: 9px;
+    text-align: center;
   }
 }
 
-.footer-mission {
-  font-size: 12px;
-}
-
-.footer-copyright {
-  font-size: 9px;
-  text-align: center;
-}
