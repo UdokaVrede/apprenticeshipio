@@ -1,15 +1,30 @@
 .pinterest-loop {
+  width: 265px;
+  height: 221px;
+  background-color: $medium-red;
+  mask-image: url(<%= asset_path 'LargeLoop.svg' %>);
   float: right;
-}
-
-.linkedin-loop {
-  float: right;
-  color: $blue;
+  margin-top: 20px;
+  margin-right: 425px;
 }
 
 .slack-loop {
+  width: 129px;
+  height: 110px;
+  mask-image: url(<%= asset_path 'TinyLoop.svg' %>);
+  background-color: $medium-purple;
   float: left;
-  color: $purple;
+  margin-left: 150px;
+}
+
+.slack-loop-2 {
+  width: 200px;
+  height: 180px;
+  mask-image: url(<%= asset_path 'SmallLoop.svg' %>);
+  background-color: $navy;
+  float: right;
+  margin-right: 400px;
+  margin-top: -200px;
 }
 
 .testimonial-linkedin, .testimonial-pinterest, .testimonial-slack {
