@@ -1,16 +1,37 @@
-<div class="parallax-body">
 <%= render "shared/navbar" %>
+<div class="parallax-body">
 
 <!-- Header - Apprentices, Companies, Cities -->
 
+<section>
   <div class="regular-wrapper-header">
-    <h1 class="content-title-1">So You Want To</h1>
+    <div class="layer parallax-loop-1" id="Large-Loop" data-speed="-5"></div>
+    <div class="layer parallax-loop-2" id="Medium-Loop" data-speed="5"></div>
+    <div class="layer parallax-loop-3" id="Small-Loop" data-speed="2"></div>
+    <div class="layer parallax-loop-4" id="Tiny-Loop" data-speed="6"></div>
+    <div class="layer parallax-loop-5" id="Large-Loop" data-speed="8"></div>
+    <div class="layer parallax-loop-6" id="Medium-Loop" data-speed="-2"></div>
+    <div class="layer parallax-loop-7" id="Small-Loop" data-speed="4"></div>
+    <div class="layer parallax-loop-8" id="Tiny-Loop" data-speed="-9"></div>
+    <div class="layer parallax-loop-9" id="Large-Loop" data-speed="6"></div>
+    <div class="layer parallax-loop-10" id="Medium-Loop" data-speed="-7"></div>
+    <div class="layer parallax-loop-11" id="Small-Loop" data-speed="-5"></div>
+    <div class="layer parallax-loop-12" id="Tiny-Loop" data-speed="5"></div>
+  <h2> Let's learn about </h2>
+  <h2 class="layer" data-speed="2">
+    apprenticeships
+  </h2>
+  <h2> in tech... </h2>
+  </div>
+</section>
+
+<!--     <h1 class="content-title-1">So You Want To</h1>
     <h1 class="content-title-2">learn</h1>
     <h1 class="content-title-1">about</h1>
     <h1 class="content-title-3">apprenticeships</h1>
     <h1 class="content-title-1">in</h1>
-    <h1 class="content-title-3">Tech?</h1>
-  </div>
+    <h1 class="content-title-3">Tech?</h1> -->
+
   <div class="regular-wrapper-mini-header">
     <center>
     <div class="apprentices-card">
@@ -31,7 +52,7 @@
     </div>
     <div class="cities-card">
       <div class="cities-info">
-        Clever Cities
+        Clever <br> Cities
         <div class="cities-icon">
           <i class="fas fa-city"></i>
         </div>
@@ -49,9 +70,10 @@
   <div class="regular-wrapper-usa">
     <img src="https://i.imgur.com/xEEnl8e.png" class="floating-image-usa" alt="United States Map" />
     <div class="content-usa">
-      <h3>In the United States, this project tracks</h3>
+      <h3>This project tracks</h3>
       <h1 class="usa-number"><%= @total_aprnts%></h1>
-      <br><h3>Apprentice Software Engineers.</h3>
+      <br><h3>Apprentice Software Engineers</h3>
+      <h3>in the United States.</h3>
     </div>
   </div>
 
@@ -95,12 +117,12 @@
 <!-- Apprentice Statistic #5  -->
 
   <div class="parallax-wrapper-gender">
-    <i id="" class="fas fa-venus floating-image-gender"></i>
-    <i id="" class="fas fa-genderless floating-image-gender"></i>
-    <i id="" class="fas fa-neuter floating-image-gender"></i>
-    <i id="" class="fas fa-mars floating-image-gender"></i>
-    <i id="" class="fas fa-transgender floating-image-gender"></i>
-    <i id="" class="fas fa-transgender-alt floating-image-gender"></i>
+    <i id="mover" class="fas fa-venus floating-image-gender" data-speed="10"></i>
+    <i id="mover" class="fas fa-genderless floating-image-gender" data-speed="-2"></i>
+    <i id="mover" class="fas fa-neuter floating-image-gender" data-speed="7"></i>
+    <i id="mover" class="fas fa-mars floating-image-gender" data-speed="4"></i>
+    <i id="mover" class="fas fa-transgender floating-image-gender" data-speed="-8"></i>
+    <i id="mover" class="fas fa-transgender-alt floating-image-gender" data-speed="8"></i>
     <!-- <div class="mover" data-type="sprite" data-offsety="-700px" data-xposition="765px" data-speed="-2.2" style="background-position: 765px 127.273px;"></div> -->
     <div class="content-gender">
       <h3> We estimate more than </h3><h1 class="gender-number"> <%=@perc_aprnts_ugi%>%</h1><h3> of apprentices come from an underrepresented gender identity.</h3><br>
@@ -283,7 +305,7 @@
 
     <div class="parallax-wrapper-annual">
       <div class="content-annual">
-        <h3>If only the companies with more than 100 employees in 
+        <h3>If only the companies with more than 100 employees in
         <%=select("cities", "companies_in_city", options_for_select(@companies_gt_100_employees, selected = 'San Francisco Bay Area'), {}, {id: "city-select-input", class: "city-select-input"})%>
         hired <input id="apprentices-in-company-input" type='number' value=3 min=0 /> apprentices per year, </h3>
         <h3><span id="city-name"></span> would train <span id="city-yearly-apprentices"></span> new apprentices per year. </h3>
