@@ -1,8 +1,7 @@
       <% case type
         when "home-top"
           class_type = "mini-banner home-top"
-          img_top = ""
-          img_top_alt = ""
+          img_top = 'LargeLoop.svg'
           h1_text = "What is an Apprenticeship?"
           p_text = "An apprenticeship is a 6 to 12 month (or longer!) paid training program aimed at developing mastery in specialized, high demand skills. Apprenticeships are hands-on, state of the art learning environments guided and supported by an advanced person of the trade or craft. You remember the Medieval blacksmiths? That's right, this path has been proven for over 500 years."
         when "home-bottom"
@@ -84,7 +83,7 @@
 <div class="<%= class_type %>" style="">
   <div class="mini-container">
     <%if img_top %>
-      <img src=<%= img_top %> alt= <%= img_top_alt %> >
+      <%= asset_path img_top %>
     <%end%>
     <h1>
       <%= h1_text %>

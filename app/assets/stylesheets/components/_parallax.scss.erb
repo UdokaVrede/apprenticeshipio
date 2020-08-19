@@ -6,40 +6,109 @@
     overflow-y:auto;
 }
 
+// Header Top
+
+section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+section div {
+  left: 0;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.parallax-loop-1 {
+  top: 100px;
+  left: 100px;
+}
+
+.parallax-loop-2 {
+  right: 450px;
+  bottom: 50px;
+}
+
+.parallax-loop-3 {
+  top: 350px;
+  right: 50px;
+}
+
+.parallax-loop-4 {
+  left: 50px;
+  bottom: 350px;
+}
+
+#Large-Loop {
+  mask-image: url(<%= asset_path 'LargeLoop.svg' %>);
+  width: 530px;
+  height: 442px;
+  background-color: $teal;
+}
+
+#Medium-Loop {
+  mask-image: url(<%= asset_path 'MediumLoop.svg' %>);
+  width: 265px;
+  height: 221px;
+  background-color: $medium-red;
+}
+
+#Small-Loop {
+  mask-image: url(<%= asset_path 'SmallLoop.svg' %>);
+  width: 245px;
+  height: 221px;
+  background-color: $purple;
+}
+
+#Tiny-Loop {
+  mask-image: url(<%= asset_path 'TinyLoop.svg' %>);
+  width: 125px;
+  height: 110px;
+  background-color: $orange;
+}
+
+section h2 {
+  color: $black;
+  font-size: 10rem;
+  position: relative;
+}
+
+@media screen and (max-width: 990px) {
+  section h2 {
+    font-size: 9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section h2 {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  section h2 {
+    font-size: 4rem;
+  }
+}
+
 // Header - Apprentices, Companies, Cities
 
 .regular-wrapper-header, .regular-wrapper-footer {
   width: 100vw;
   height:100vh;
   padding-top:20vh;
-  background-color: $white;
   z-index: 2;
-  background-image: url("https://i.imgur.com/zU6qOcA.png");
+  background-color: $background-gray;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.content-title-1 {
-  font-family: $headers-font;
-  color: $orange;
-  font-size: 100px;
-  margin-left: 150px;
-  margin-top: -30px;
-}
-
-.content-title-2 {
-  font-family: $numbers-font;
-  color: $orange;
-  font-size: 100px;
-  margin-left: 300px;
-}
-
-.content-title-3 {
-  font-family: $numbers-font;
-  color: $orange;
-  font-size: 95px;
-  margin-left: 50px;
 }
 
 .regular-wrapper-mini-header, .regular-wrapper-mini-footer {
@@ -57,21 +126,19 @@
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
   margin: 50px;
   background-color: $teal;
-  background-image: url("https://i.imgur.com/Ti2wx5P.png");
   position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .apprentices-info {
   font-size: 30px;
   color: $white;
   margin: 32px;
-  font-family: $numbers-font;
+  font-family: $body-font;
 }
 
 .apprentices-icon {
   font-size: 75px;
+  margin-top: 5px;
 }
 
 .companies-card {
@@ -85,21 +152,18 @@
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
   margin: 50px;
   background-color: $blue;
-  background-image: url("https://i.imgur.com/yahdbU0.png");
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .companies-info {
   font-size: 30px;
   color: $white;
   margin: 32px;
-  font-family: $numbers-font;
+  font-family: $body-font;
 }
 
 .companies-icon {
   font-size: 75px;
+  margin-top: 5px;
 }
 
 .cities-card {
@@ -113,21 +177,18 @@
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
   margin: 50px;
   background-color: $purple;
-  background-image: url("https://i.imgur.com/pnVfO8j.png");
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .cities-info {
   font-size: 30px;
   color: $white;
   margin: 32px;
-  font-family: $numbers-font;
+  font-family: $body-font;
 }
 
 .cities-icon {
   font-size: 75px;
+  margin-top: 5px;
 }
 
 // 1st Navbar - Apprentices
