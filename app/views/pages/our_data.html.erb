@@ -1,5 +1,4 @@
 <%= render "shared/navbar" %>
-<div class="parallax-body">
 
 <!-- Header - Apprentices, Companies, Cities -->
 
@@ -32,6 +31,7 @@
     <h1 class="content-title-1">in</h1>
     <h1 class="content-title-3">Tech?</h1> -->
 
+<div class="parallax-body">
   <div class="regular-wrapper-mini-header">
     <center>
     <div class="apprentices-card">
@@ -59,7 +59,7 @@
       </div>
     </div>
     </center>
-  </div>
+  </div> <!-- Parallax Body Open -->
 
 <!-- Apprentice Navbar #1 -->
   <div class="parallax-apprentices-navbar">
@@ -100,7 +100,7 @@
 <!-- Apprentice Statistic #4  -->
 
   <div class="regular-wrapper-careers">
-<!--       Insert images below here -->
+    <!-- Images here -->
     <img src="" class="floating-image-careers" alt="" />
     <img src="" class="floating-image-careers" alt="" />
     <img src="" class="floating-image-careers" alt="" />
@@ -112,7 +112,6 @@
       </h3>
       </p>
     </div>
-  </div>
 
 <!-- Apprentice Statistic #5  -->
 
@@ -140,7 +139,7 @@
 <!-- Apprentice Statistic #7  -->
 
   <div class="regular-wrapper-surprises">
-<!--       Insert images below here -->
+    <!-- Images here-->
     <img src="" class="floating-image-surprises" alt="" />
     <img src="" class="floating-image-surprises" alt="" />
     <img src="" class="floating-image-surprises" alt="" />
@@ -149,7 +148,6 @@
       An apprentice at Pinterest was a former musician. <br>
       An apprentice at LinkedIn was a former personal trainer. <br></h3>
     </div>
-  </div>
 
 <!--  Company Navbar #2 -->
   <div class="parallax-companies-navbar">
@@ -237,9 +235,9 @@
   </div>
 
 <!--  Cities Navbar #3 -->
-<div class="parallax-cities-navbar">
-  <span>Clever Cities</span>
-</div>
+  <div class="parallax-cities-navbar">
+    <span>Clever Cities</span>
+  </div>
 
 <!-- Industry Statistic #11 -->
 
@@ -312,7 +310,6 @@
       </div>
     </div>
 
-
 <!-- Learn More Footer -->
 
   <div class="regular-wrapper-footer">
@@ -350,6 +347,7 @@
   </div>
 
   <%= render "shared/footer" %>
-</div>
+
+</div> <!-- Parallax Body Close -->
 
 <%= javascript_pack_tag 'our_data' %>
