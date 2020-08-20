@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   get 'resources/employers', to: 'pages#employers'
   get 'resources/educators', to: 'pages#educators'
   get 'apply_now', to: 'pages#apply_now', as: :apply_now
+  get '/404', to: 'errors#not_found'
+  get '/422', to: 'errors#unacceptable'
+  get '/500', to: 'errors#server_error'
   root to: 'pages#home'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
