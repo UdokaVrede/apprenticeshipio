@@ -2,8 +2,10 @@
 
 <!-- Header - Apprentices, Companies, Cities -->
 
-<section>
-  <div class="regular-wrapper-header">
+<div class="parallax-body">
+
+<div class="our-data-header-container">
+  <div class="our-data-header">
     <div class="layer parallax-loop-1" id="Large-Loop" data-speed="-5"></div>
     <div class="layer parallax-loop-2" id="Medium-Loop" data-speed="5"></div>
     <div class="layer parallax-loop-3" id="Small-Loop" data-speed="2"></div>
@@ -16,13 +18,13 @@
     <div class="layer parallax-loop-10" id="Medium-Loop" data-speed="-7"></div>
     <div class="layer parallax-loop-11" id="Small-Loop" data-speed="-5"></div>
     <div class="layer parallax-loop-12" id="Tiny-Loop" data-speed="5"></div>
-  <h2> Let's learn about </h2>
-  <h2 class="layer" data-speed="2">
-    apprenticeships
-  </h2>
-  <h2> in tech... </h2>
+    <!-- <h2> Let's learn about </h2> -->
+    <h2 class="layer apprenticeships-1" data-speed="2">apprenticeships</h2>
+    <h2 class="layer apprenticeships-2" data-speed="6">apprenticeships</h2>
+    <h2 class="layer apprenticeships-3" data-speed="10">apprenticeships</h2>
+    <!-- <h2> in tech... </h2> -->
   </div>
-</section>
+</div>
 
 <!--     <h1 class="content-title-1">So You Want To</h1>
     <h1 class="content-title-2">learn</h1>
@@ -31,7 +33,6 @@
     <h1 class="content-title-1">in</h1>
     <h1 class="content-title-3">Tech?</h1> -->
 
-<div class="parallax-body">
   <div class="regular-wrapper-mini-header">
     <center>
     <div class="apprentices-card">
@@ -59,7 +60,9 @@
       </div>
     </div>
     </center>
-  </div> <!-- Parallax Body Open -->
+  </div>
+
+<!-- Parallax Body Open -->
 
 <!-- Apprentice Navbar #1 -->
   <div class="parallax-apprentices-navbar">
@@ -99,7 +102,7 @@
 
 <!-- Apprentice Statistic #4  -->
 
-  <div class="regular-wrapper-careers">
+  <div class="parallax-wrapper-careers">
     <!-- Images here -->
     <img src="" class="floating-image-careers" alt="" />
     <img src="" class="floating-image-careers" alt="" />
@@ -111,9 +114,18 @@
         The top 5 most common<br> previous careers were...<br><%=@top_five_prev_careers%>
       </h3>
       </p>
-    </div>
+  </div>
 
 <!-- Apprentice Statistic #5  -->
+
+  <div class="regular-wrapper-race">
+    <div class="content-race">
+      <h3> We estimate more than </h3><h1 class="race-number"> <%=@perc_aprnts_uri%>%</h1><h3> of apprentices come from an underrepresented racial identity.</h3><br></p>
+    </div>
+  </div>
+
+
+<!-- Apprentice Statistic #6  -->
 
   <div class="parallax-wrapper-gender">
     <i id="mover" class="fas fa-venus floating-image-gender" data-speed="10"></i>
@@ -125,14 +137,6 @@
     <!-- <div class="mover" data-type="sprite" data-offsety="-700px" data-xposition="765px" data-speed="-2.2" style="background-position: 765px 127.273px;"></div> -->
     <div class="content-gender">
       <h3> We estimate more than </h3><h1 class="gender-number"> <%=@perc_aprnts_ugi%>%</h1><h3> of apprentices come from an underrepresented gender identity.</h3><br>
-    </div>
-  </div>
-
-<!-- Apprentice Statistic #6  -->
-
-  <div class="regular-wrapper-race">
-    <div class="content-race">
-      <h3> We estimate more than </h3><h1 class="race-number"> <%=@perc_aprnts_uri%>%</h1><h3> of apprentices come from an underrepresented racial identity.</h3><br></p>
     </div>
   </div>
 
@@ -278,7 +282,7 @@
     <div class="regular-wrapper-most">
       <img src="" class="floating-image-most" alt="" />
       <div class="content-most">
-        <h3>Right now, Chicago has the most companies participating in software engineering apprenticeship.</h3>
+        <h3>Right now, Chicago has the most past and present software engineering apprentices total. Companies across Chicago started training apprentices earliest, including very small companies, flying in the face of Silicon Valley lore about junior engineers reducing productivity. Companies in Chicago have shown the most commitment over time to developing amazing non-traditional engineers through apprenticeship. In Chicago, apprenticeship is an integral part of software engineering culture. Chicago is likely the best city to be a non-traditional software engineer.</h3>
       </div>
     </div>
 
@@ -286,7 +290,7 @@
 
     <div class="parallax-wrapper-annual">
       <div class="content-annual">
-        <h3>Companies in the Greater Seattle area hire the most non-traditional engineers each year. </h3>
+        <h3>Companies in the Greater Seattle area hire the most non-traditional engineers each year. We're talking about you, Microsoft and Amazon. Seattle likely hires the most non-traditional engineers who didn't study or train in Seattle. Non-traditional engineers looking for a new place to call home should look to Seattle. Employers in the Seattle area should look to Microsoft and Amazon for establishing some of the United States' best practices for hiring and training non-traditional engineers. </h3>
       </div>
     </div>
 
@@ -295,7 +299,7 @@
     <div class="regular-wrapper-most">
       <img src="" class="floating-image-most" alt="" />
       <div class="content-most">
-        <h3>The San Francisco Bay Area holds the most potential for companies who could train more software engineering apprentices.</h3>
+        <h3>The Greater Bay Area, including San Francisco, San Jose, and Oakland, has the most companies currently hiring through software engineering apprenticeship. This region holds the most potential for impact in the country.</h3>
       </div>
     </div>
 
@@ -303,10 +307,28 @@
 
     <div class="parallax-wrapper-annual">
       <div class="content-annual">
-        <h3>If only the companies with more than 100 employees in
+        <h3>If all the companies with >100 employees in
         <%=select("cities", "companies_in_city", options_for_select(@companies_gt_100_employees, selected = 'San Francisco Bay Area'), {}, {id: "city-select-input", class: "city-select-input"})%>
         hired <input id="apprentices-in-company-input" type='number' value=3 min=0 /> apprentices per year, </h3>
-        <h3><span id="city-name"></span> would train <span id="city-yearly-apprentices"></span> new apprentices per year. </h3>
+        <h3><span id="city-name"></span> would train <span id="city-yearly-apprentices"></span><span>new apprentices per year.</span></h3>
+      </div>
+    </div>
+
+<!-- Industry Statistic #19 -->
+
+    <div class="regular-wrapper-worst">
+      <img src="" class="floating-image-worst" alt="" />
+      <div class="content-worst">
+        <h3>Despite graduating the most non-traditional engineers of any city in the United States, the Greater New York City Metropolitan area maintains one of the lowest rates of technology apprenticeships in the country. New York likely ranks as the most difficult and possibly the worst city to be a non-traditional engineer, followed by Los Angeles and Washington DC.</h3>
+        <p> That is to say, employers in the New York, Los Angeles, and Washington D.C. Metropolitan Areas stand to benefit the most from starting software engineering apprenticeships immediately. These employers would likely be the first and only in their area, and could repeatedly, easily hire some of the best non-traditional engineers in the United States.
+      </div>
+    </div>
+
+<!-- Industry Statistic #20 -->
+
+    <div class="parallax-wrapper-small">
+      <div class="content-small">
+        <h3></h3>
       </div>
     </div>
 
@@ -346,8 +368,8 @@
     </center>
   </div>
 
-  <%= render "shared/footer" %>
+</div>
 
-</div> <!-- Parallax Body Close -->
+  <%= render "shared/footer" %>
 
 <%= javascript_pack_tag 'our_data' %>
