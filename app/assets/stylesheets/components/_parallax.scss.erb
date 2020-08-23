@@ -1,6 +1,6 @@
 // Header Top
 
-section {
+.our-data-header-container {
   align-items: center;
   display: flex;
   justify-content: center;
@@ -10,85 +10,80 @@ section {
   width: 100%;
 }
 
-section div {
-  left: 0;
+.our-data-header-container div {
   object-fit: contain;
   position: absolute;
-  top: 0;
   width: 100%;
+  float: center;
+  margin-left: 200px;
 }
 
-.parallax-loop-1 {
-  top: 100px;
-  left: 100px;
+.apprenticeships-1 {
+  margin-top: 0px;
 }
 
-.parallax-loop-2 {
-  right: 450px;
-  bottom: 50px;
+.apprenticeships-2 {
+  margin-top: -100px;
 }
 
-.parallax-loop-3 {
-  top: 350px;
-  right: 50px;
+.apprenticeships-3 {
+  margin-top: -150px;
 }
 
-.parallax-loop-4 {
-  left: 50px;
-  bottom: 350px;
-}
+// .parallax-loop-1 {
+//   top: 100px;
+//   left: 100px;
+// }
 
-#Large-Loop {
-  mask-image: url(<%= asset_path 'LargeLoop.svg' %>);
-  width: 530px;
-  height: 442px;
-  background-color: $teal;
-}
+// .parallax-loop-2 {
+//   right: 450px;
+//   bottom: 50px;
+// }
 
-#Medium-Loop {
-  mask-image: url(<%= asset_path 'MediumLoop.svg' %>);
-  width: 265px;
-  height: 221px;
-  background-color: $medium-red;
-}
+// .parallax-loop-3 {
+//   top: 350px;
+//   right: 50px;
+// }
 
-#Small-Loop {
-  mask-image: url(<%= asset_path 'SmallLoop.svg' %>);
-  width: 245px;
-  height: 221px;
-  background-color: $purple;
-}
+// .parallax-loop-4 {
+//   left: 50px;
+//   bottom: 350px;
+// }
 
-#Tiny-Loop {
-  mask-image: url(<%= asset_path 'TinyLoop.svg' %>);
-  width: 125px;
-  height: 110px;
-  background-color: $orange;
-}
+// #Large-Loop {
+//   mask-image: url(<%= asset_path 'LargeLoop.svg' %>);
+//   width: 530px;
+//   height: 442px;
+//   background-color: $teal;
+// }
 
-section h2 {
+// #Medium-Loop {
+//   mask-image: url(<%= asset_path 'MediumLoop.svg' %>);
+//   width: 265px;
+//   height: 221px;
+//   background-color: $medium-red;
+// }
+
+// #Small-Loop {
+//   mask-image: url(<%= asset_path 'SmallLoop.svg' %>);
+//   width: 245px;
+//   height: 221px;
+//   background-color: $purple;
+// }
+
+// #Tiny-Loop {
+//   mask-image: url(<%= asset_path 'TinyLoop.svg' %>);
+//   width: 125px;
+//   height: 110px;
+//   background-color: $orange;
+// }
+
+.our-data-header h2 {
   color: $black;
   font-size: 10rem;
   position: relative;
 }
 
-@media screen and (max-width: 990px) {
-  section h2 {
-    font-size: 9rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  section h2 {
-    font-size: 6rem;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  section h2 {
-    font-size: 4rem;
-  }
-}
 
 // Header - Apprentices, Companies, Cities
 
@@ -308,7 +303,56 @@ section h2 {
 
 // 4th Statistic - Apprentice Previous Careers
 
-.regular-wrapper-careers {
+.parallax-wrapper-careers {
+  width: 100vw;
+  height: 100vh;
+  padding-top:10vh;
+  box-sizing: border-box;
+  transform-style: preserve-3d;
+}
+
+.parallax-wrapper-careers::before {
+    content:"";
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left:0;
+  // Insert identities background image here
+    // background-image: url("https://i.imgur.com/zU6qOcA.png");
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    transform:translateZ(-1px) scale(2);
+}
+
+.floating-image-careers {
+  transform: translate(75px, 50px) rotate(-25deg);
+  float: left;
+  font-size: 200px;
+  color: $orange;
+}
+
+.content-careers {
+  margin: 0 auto;
+  padding: 50px;
+  width: 50%;
+  background: $white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 20px;
+  text-align: center;
+  color: $orange;
+}
+
+.careers-number {
+  font-family: $numbers-font;
+  font-size: 100px;
+  color: $orange;
+}
+
+// 5th Statistic - Apprentice Identity - Race
+
+.regular-wrapper-race {
   width: 100vw;
   height:100vh;
   padding-top:20vh;
@@ -317,13 +361,7 @@ section h2 {
   position: relative;
 }
 
-.floating-image-careers {
-  transform: translate(75px, 50px) rotate(-25deg);
-  width: 350px;
-  float: left;
-}
-
-.content-careers {
+.content-race {
   margin: 0 auto;
   padding: 50px;
   width: 50%;
@@ -334,14 +372,14 @@ section h2 {
   text-align: center;
 }
 
-.careers-number {
+.race-number {
   font-family: $numbers-font;
   color: $medium-blue;
   padding-top: 40px;
   font-size: 100px;
 }
 
-// 5th Statistic - Apprentice Identity - Gender
+// 6th Statistic - Apprentice Identity - Gender
 
 .parallax-wrapper-gender {
   width: 100vw;
@@ -358,7 +396,7 @@ section h2 {
     top:0;
     left:0;
   // Insert identities background image here
-    background-image: url("https://i.imgur.com/zU6qOcA.png");
+    // background-image: url("https://i.imgur.com/zU6qOcA.png");
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
@@ -388,35 +426,6 @@ section h2 {
   font-family: $numbers-font;
   font-size: 100px;
   color: $orange;
-}
-
-// 6th Statistic - Apprentice Identity - Race
-
-.regular-wrapper-race {
-  width: 100vw;
-  height:100vh;
-  padding-top:20vh;
-  background-color: $navy;
-  z-index: 2;
-  position: relative;
-}
-
-.content-race {
-  margin: 0 auto;
-  padding: 50px;
-  width: 50%;
-  background: $white;
-  color: $blue;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  border-radius: 20px;
-  text-align: center;
-}
-
-.race-number {
-  font-family: $numbers-font;
-  color: $medium-blue;
-  padding-top: 40px;
-  font-size: 100px;
 }
 
 // 7th Statistic - Apprentice Surprises
@@ -749,4 +758,12 @@ section h2 {
 
 .regular-wrapper-mini-footer {
 
+}
+
+// Interactive Estimator - Cities
+
+#city-yearly-apprentices {
+  font-family: $numbers-font;
+  font-size: 100px;
+  color: $orange;
 }
