@@ -112,3 +112,16 @@ $('.floater').each(function(){
     }
   });
 });
+
+
+// const observer = new IntersectionObserver(handleIntersection);
+
+// function handleIntersection(entries, observer) {
+//   entries.forEach(entry => {
+//     if (entry.isIntersecting) {
+//       console.log('yes!')
+//     };
+//   });
+// }
+
+// $('.floater').each(div => observer.observe(div));
