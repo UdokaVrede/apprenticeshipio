@@ -28,8 +28,11 @@
 // }
 .wrapper {
   padding: 10rem 0;
+  position: relative;
+  z-index: 1;
 }
 .content {
+  position: relative;
   margin: 0 auto;
   padding: 50px;
   width: 50%;
@@ -69,7 +72,11 @@
 }
 
 .education {
-  &::before { background-image: url("https://i.imgur.com/C46DO20.jpg"); }
+  background-size: 120%;
+  background-image: url(https://i.imgur.com/C46DO20.jpg);
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  // &::before {  }
   .content { color: $teal; }
 }
 
@@ -88,6 +95,7 @@
 }
 
 .race {
+  z-index: 2;
   background-color: $navy;
   .content { color: $blue; }
   .race-number {color: $medium-blue;}
@@ -95,11 +103,12 @@
 
 .gender {
   background-image: url("https://i.imgur.com/zU6qOcA.png");
+  position: relative;
   .floater {
     font-size: 200px;
     color: $orange;
   }
-  .content {color: $orange;}
+  .content { color: $orange; }
 }
 
 .surprises {
