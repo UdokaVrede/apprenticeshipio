@@ -1,3 +1,23 @@
+// --------------------------------------------------------------------------------
+// ----------------- Our Data Calculator ------------------------------------------
+// --------------------------------------------------------------------------------
+const recalc = () => {
+  let selectBox = document.getElementById("city-select-input")
+  let companiesInCity = selectBox.value
+  let apprenticesInCompany = document.getElementById("apprentices-in-company-input").value
+  document.getElementById("city-name").innerHTML = selectBox.options[selectBox.selectedIndex].text
+  document.getElementById("city-yearly-apprentices").innerHTML = companiesInCity * apprenticesInCompany
+};
+
+recalc(document.getElementById("city-select-input").value);
+
+document.getElementById("city-select-input").onchange = recalc
+document.getElementById("apprentices-in-company-input").onchange = recalc
+// --------------------------------------------------------------------------------
+
+// --------------------------------------------------------------------------------
+// --------------------- Mouse Parallax -------------------------------------------
+// --------------------------------------------------------------------------------
 document.addEventListener('mousemove', e => parallax(e));
 
 const parallax = (e) => {
@@ -10,37 +30,38 @@ const parallax = (e) => {
     layer.style.transform = `translate(${x}px, ${y}px)`;
   });
 }
+// --------------------------------------------------------------------------------
 
-// document.getElementsByClassName("parallax-body")[0].addEventListener("scroll", e => parallax2(e))
+// --------------------------------------------------------------------------------
+// ---------------------------- Scroll Parallax -----------------------------------
+// --------------------------------------------------------------------------------
+$('.floater').each(function(){
+  var img = $(this);
+  var imgParent = $(this).parent();
 
-// const parallax2 = (e) => {
-//   document.querySelectorAll('#mover').forEach(mover => {
-//     const speed = mover.getAttribute('data-speed');
+  function parallaxImg () {
+    var speed = img.data('speed');
+    var winTop = $(this).scrollTop();          // current viewport's top distance from document top
+    var winH = $(this).height();               // user's device viewport height
+    var winBottom = winTop + winH;             // current viewport's bottom distance from document top
+    var parentTop = imgParent.offset().top;    // parent div's top border distance from document top
+    var parentH = imgParent.innerHeight();     // div's height
+    let parentBottom = parentTop + parentH     // parent div's bottom border distance from document top
+    
+    // Is Window Intersecting Parent?
+    if (winBottom > parentTop && winTop < parentBottom) {
+      // Image travels a ratio of the distance between winBottom & parentTop
+      let travelY = speed * (winBottom - parentTop) / 10;
+      img.css('transform', 'translateY(' + travelY + 'px)');
+    }
+  }
 
-//     // for the speed of the scroll
-
-//     // multiply the background-position: y by a multiple of the object speed?
-
-//     // const x = (window.innerWidth - e.pageX * speed) / 100;
-//     const y = (window.innerHeight - e.pageY * speed) / 100;
-
-//     console.log('e', e);
-//     console.log('wins', window.innerHeight);
-
-//     mover.style.transform = `translate(${0}px, ${y}px)`;
-//   });
-// }
-
-const recalc = () => {
-  let selectBox = document.getElementById("city-select-input")
-  let companiesInCity = selectBox.value
-  let apprenticesInCompany = document.getElementById("apprentices-in-company-input").value
-  document.getElementById("city-name").innerHTML = selectBox.options[selectBox.selectedIndex].text
-  document.getElementById("city-yearly-apprentices").innerHTML = companiesInCity * apprenticesInCompany
-  console.log('called')
-};
-
-recalc(document.getElementById("city-select-input").value);
-
-document.getElementById("city-select-input").onchange = recalc
-document.getElementById("apprentices-in-company-input").onchange = recalc
+  $(document).on({
+    scroll: function () {
+      parallaxImg();
+    }, ready: function () {
+      parallaxImg();
+    }
+  });
+});
+// --------------------------------------------------------------------------------
