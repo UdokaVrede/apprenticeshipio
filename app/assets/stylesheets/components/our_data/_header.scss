@@ -1,0 +1,176 @@
+.our-data-header-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.our-data-header-container div {
+  object-fit: contain;
+  position: absolute;
+  width: 100%;
+  float: center;
+  margin-left: 200px;
+}
+
+.apprenticeships-1 {
+  margin-top: 0px;
+}
+
+.apprenticeships-2 {
+  margin-top: -100px;
+}
+
+.apprenticeships-3 {
+  margin-top: -150px;
+}
+
+// .parallax-loop-1 {
+//   top: 100px;
+//   left: 100px;
+// }
+
+// .parallax-loop-2 {
+//   right: 450px;
+//   bottom: 50px;
+// }
+
+// .parallax-loop-3 {
+//   top: 350px;
+//   right: 50px;
+// }
+
+// .parallax-loop-4 {
+//   left: 50px;
+//   bottom: 350px;
+// }
+
+// #Large-Loop {
+//   mask-image: url(<%= asset_path 'LargeLoop.svg' %>);
+//   width: 530px;
+//   height: 442px;
+//   background-color: $teal;
+// }
+
+// #Medium-Loop {
+//   mask-image: url(<%= asset_path 'MediumLoop.svg' %>);
+//   width: 265px;
+//   height: 221px;
+//   background-color: $medium-red;
+// }
+
+// #Small-Loop {
+//   mask-image: url(<%= asset_path 'SmallLoop.svg' %>);
+//   width: 245px;
+//   height: 221px;
+//   background-color: $purple;
+// }
+
+// #Tiny-Loop {
+//   mask-image: url(<%= asset_path 'TinyLoop.svg' %>);
+//   width: 125px;
+//   height: 110px;
+//   background-color: $orange;
+// }
+
+.our-data-header h2 {
+  color: $black;
+  font-size: 10rem;
+  position: relative;
+}
+
+// Header - Apprentices, Companies, Cities
+
+.regular-wrapper-header, .regular-wrapper-footer {
+width: 100vw;
+height:100vh;
+// padding-top:20vh;
+z-index: 2;
+background-color: $background-gray;
+position: relative;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.regular-wrapper-mini-header, .regular-wrapper-mini-footer {
+padding: 50px 25px 50px 25px;
+}
+
+.apprentices-card {
+display: inline-block;
+position: relative;
+width: 258px;
+min-width: 202.5px;
+height: 258px;
+border-radius: 15px;
+overflow:hidden;
+box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+margin: 50px;
+background-color: $teal;
+position: relative;
+}
+
+.apprentices-info {
+font-size: 30px;
+color: $white;
+margin: 32px;
+font-family: $body-font;
+}
+
+.apprentices-icon {
+font-size: 75px;
+margin-top: 5px;
+}
+
+.companies-card {
+display: inline-block;
+position: relative;
+width: 258px;
+min-width: 202.5px;
+height: 258px;
+border-radius: 15px;
+overflow:hidden;
+box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+margin: 50px;
+background-color: $blue;
+}
+
+.companies-info {
+font-size: 30px;
+color: $white;
+margin: 32px;
+font-family: $body-font;
+}
+
+.companies-icon {
+font-size: 75px;
+margin-top: 5px;
+}
+
+.cities-card {
+display: inline-block;
+position: relative;
+width: 258px;
+min-width: 202.5px;
+height: 258px;
+border-radius: 15px;
+overflow:hidden;
+box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+margin: 50px;
+background-color: $purple;
+}
+
+.cities-info {
+font-size: 30px;
+color: $white;
+margin: 32px;
+font-family: $body-font;
+}
+
+.cities-icon {
+font-size: 75px;
+margin-top: 5px;
+}

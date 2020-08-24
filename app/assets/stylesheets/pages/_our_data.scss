@@ -1,0 +1,152 @@
+// .regular-wrapper {
+//   padding-top:20vh;
+//   width: 100vw;
+//   height:100vh;
+//   z-index: 2;
+//   position: relative;
+// }
+
+// .parallax-wrapper {
+//   width: 100vw;
+//   height: 100vh;
+//   padding-top:10vh;
+//   box-sizing: border-box;
+//   transform-style: preserve-3d;
+// }
+
+// .parallax-wrapper::before {
+//   content:"";
+//   width: 100vw;
+//   height: 100vh;
+//   top:0;
+//   left:0;
+//   position: absolute;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   z-index: -1;
+//   transform:translateZ(-1px) scale(2);
+// }
+.wrapper {
+  padding: 10rem 0;
+}
+.content {
+  margin: 0 auto;
+  padding: 50px;
+  width: 50%;
+  background: $white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.number-text {
+  font-family: $numbers-font;
+  padding-top: 40px;
+  font-size: 100px;
+}
+
+.floater {
+  position: absolute;
+}
+
+.title {
+  font-family: $numbers-font;
+  font-size: 75px;
+  margin: 100px;
+  &.apprentices { color: $teal; }
+  &.companies { color: $blue; }
+  &.cities { color: $purple; }
+}
+.floating-image {
+  transform: translate(75px, 50px) rotate(-25deg);
+  float: left;  
+}
+
+.usa {
+  background-color: $purple;
+  .floating-image { width: 350px; }
+  .content { color: $medium-purple; }
+}
+
+.education {
+  &::before { background-image: url("https://i.imgur.com/C46DO20.jpg"); }
+  .content { color: $teal; }
+}
+
+.college {
+  background-color: $navy;
+  .content { color: $navy; }
+}
+
+.careers {
+  background-image: url("https://i.imgur.com/zU6qOcA.png");
+  .floating-image { 
+    font-size: 200px;
+    color: $orange;
+  }
+  .content { color: $black; }
+}
+
+.race {
+  background-color: $navy;
+  .content { color: $blue; }
+  .race-number {color: $medium-blue;}
+}
+
+.gender {
+  background-image: url("https://i.imgur.com/zU6qOcA.png");
+  .floater {
+    font-size: 200px;
+    color: $orange;
+  }
+  .content {color: $orange;}
+}
+
+.surprises {
+  background-color: $plum;
+  .content {color: $light-purple;}
+  .floating-image { width: 350px; }
+}
+
+.salary {
+  &::before { background-image: url("https://i.imgur.com/7VSA6VB.png"); }
+  .content { color: $teal; }
+}
+
+.start  {
+  background-color: $plum;
+  .floating-image { width: 100px; }
+  .content {color: $light-purple;}
+}
+
+.length {
+  &::before { background-image: url("https://i.imgur.com/7VSA6VB.png"); }
+  .content {color: $orange;}
+}
+
+.retention {
+  background-color: $plum;
+  .floating-image { width: 350px; }
+  .content {color: $light-purple;}
+}
+
+.size {
+  &::before {background-image: url("https://i.imgur.com/7VSA6VB.png");}
+  .content {color: $orange;}
+}
+
+.median {
+  background-color: $plum;
+  .floating-image { width: 350px; }
+  .content {color: $light-purple;}
+}
+
+.annual {
+  &::before {background-image: url("https://i.imgur.com/7VSA6VB.png");}
+  .content {color: $orange;}
+}
+
+.most {
+  .content {color: $light-purple;}
+  .floating-image { width: 350px; }
+}
