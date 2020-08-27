@@ -1,3 +1,5 @@
+// Classes are Backgrounds Colors
+
 .blue {
   background-color: $medium-blue;
 }
@@ -20,4 +22,30 @@
 
 .red {
   background-color: $medium-red;
+}
+
+// IDs are Font Colors
+
+#blue {
+  color: $blue;
+}
+
+#purple {
+  color: $purple;
+}
+
+#teal {
+  color: $teal;
+}
+
+#orange {
+  color: $orange;
+}
+
+#plum {
+  color: $plum;
+}
+
+#red {
+  color: $red;
 }

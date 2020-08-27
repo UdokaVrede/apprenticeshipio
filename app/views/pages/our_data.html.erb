@@ -1,11 +1,7 @@
 <%= render "shared/navbar" %>
-
 <!-- Parallax Body Open -->
+<%= render "shared/our_data/header" %>
 
-
-  <%= render "shared/our_data/header" %>
-
-  
 <!-- Apprentice Navbar #1 -->
   <div class="apprentices title">
     <span>Awesome Apprentices</span>
@@ -24,21 +20,33 @@
 
 <!-- Apprentice Statistic #2  -->
 
-  <div class="parallax wrapper education">
+  <div class="parallax wrapper college">
+    <i id="red" style="font-size: 175px; left: 200px; top: 2rem;" class="fas fa-graduation-cap floater" data-speed="0"></i>
+    <i id="blue" style="font-size: 125px; left: 900px; top: 37rem;" class="fas fa-graduation-cap floater" data-speed="0"></i>
+    <i id="orange" style="font-size: 500px; left: 1175px; top: -10rem;" class="fas fa-graduation-cap floater" data-speed="5"></i>
+    <i id="teal" style="font-size: 150px; left: 45rem; top: 0rem;" class="fas fa-graduation-cap floater" data-speed="0"></i>
+    <i id="plum" style="font-size: 125px; left: 1rem; top: 37rem;" class="fas fa-graduation-cap floater" data-speed="0"></i>
+    <i id="purple" style="font-size: 250px; left: 60rem; top: -10rem;" class="fas fa-graduation-cap floater" data-speed="3"></i>
+    <i id="red" style="font-size: 200px; left: 10rem; top: -20rem;" class="fas fa-graduation-cap floater" data-speed="2"></i>
+    <i id="blue" style="font-size: 150px; left: 30rem; top: 0rem;" class="fas fa-graduation-cap floater" data-speed="0"></i>
+    <i id="orange" style="font-size: 150px; left: 30rem; top: 36rem;" class="fas fa-graduation-cap floater" data-speed="0"></i>
+    <i id="teal" style="font-size: 400px; left: 10rem; top: 0;" class="fas fa-graduation-cap floater" data-speed="5"></i>
+    <i id="plum" style="font-size: 200px; left: 0rem; top: 0rem;" class="fas fa-graduation-cap floater" data-speed="3"></i>
+    <i id="purple" style="font-size: 200px; left: 60rem; top: 10rem;" class="fas fa-graduation-cap floater" data-speed="2.5"></i>
     <div class="content">
-      <h1 class="number-text">
-        <%=@perc_aprnts_gt_4_degree%>%
-      </h1><br><h3>of apprentices have <br>a 4 year undergraduate degree.</h3><br>
+      <h1 class="number-text"><%=@perc_aprnts_gt_4_degree%>%</h1><br>
+      <h3>of apprentices have <br>a 4 year undergraduate degree.</h3><br>
     </div>
   </div>
 
 <!-- Apprentice Statistic #3  -->
 
-  <div class="regular wrapper college">
+  <div class="regular wrapper education">
     <div class="content">
       <h1 class="number-text">
         <%=@perc_aprnts_bootcamp%>%
       </h1><br><h3>of apprentices attended<br>a coding bootcamp.</h3><br>
+      <img src="https://i.imgur.com/3jmRwYG.png" class="floating-image" alt="Laptop in Workspace" />
     </div>
   </div>
 
@@ -53,11 +61,13 @@
     <img src="" class="floating-image" alt="" />
     <div class="content">
       <h3>
-        The top 5 most common
-        <br> 
-        previous careers were...
-        <br>
-        <%=@top_five_prev_careers%>
+        The top 5 most common<br>
+        previous industries for apprentices are...<br><br>
+        1. Information Technology and Networking<br>
+        2. Education and Teaching<br>
+        3. Product, Project, or Program Management<br>
+        4. Administrative and Customer Support<br>
+        5. Entertainment, Music, Arts, and Design<br>
       </h3>
       </p>
     </div>
@@ -68,23 +78,26 @@
   <div class="regular wrapper race">
     <div class="content">
       <h3> We estimate more than </h3>
-      <h1 class="number-text"> <%=@perc_aprnts_uri%>%</h1>
+      <h1 class="number-text"><%=@perc_aprnts_uri%>%</h1>
       <h3> of apprentices come from an underrepresented racial identity.</h3>
-      <br>
     </div>
   </div>
-
 
 <!-- Apprentice Statistic #6  -->
 
   <div class="parallax wrapper gender">
-    <i id="mover" style="left: 0; top: -15rem;" class="fas fa-venus floater" data-speed="2"></i>
-    <i id="mover" style="left: 10rem; top: 10rem;" class="fas fa-genderless floater" data-speed="3"></i>
-    <i id="mover" style="left: 25rem; top: -10rem;" class="fas fa-neuter floater" data-speed="5"></i>
-    <i id="mover" style="right: 25rem; top: 5rem;" class="fas fa-mars floater" data-speed="6"></i>
-    <i id="mover" style="right: 10rem; top: 0;" class="fas fa-transgender floater" data-speed="7"></i>
-    <i id="mover" style="right: 0; top: 10rem;" class="fas fa-transgender-alt floater" data-speed="8"></i>
-    <!-- <div class="mover" data-type="sprite" data-offsety="-700px" data-xposition="765px" data-speed="-2.2" style="background-position: 765px 127.273px;"></div> -->
+    <i id="blue" style="font-size: 175px; left: 200px; top: 2rem;" class="fas fa-venus floater" data-speed="0"></i>
+    <i id="purple" style="font-size: 125px; left: 900px; top: 37rem;" class="fas fa-venus floater" data-speed="0"></i>
+    <i id="orange" style="font-size: 500px; left: 1175px; top: -10rem;" class="fas fa-venus floater" data-speed="5"></i>
+    <i id="teal" style="font-size: 150px; left: 45rem; top: 0rem;" class="fas fa-mars floater" data-speed="0"></i>
+    <i id="plum" style="font-size: 125px; left: 1rem; top: 37rem;" class="fas fa-mars floater" data-speed="0"></i>
+    <i id="plum" style="font-size: 250px; left: 60rem; top: -10rem;" class="fas fa-mars floater" data-speed="3"></i>
+    <i id="blue" style="font-size: 200px; left: 10rem; top: -20rem;" class="fas fa-genderless floater" data-speed="2"></i>
+    <i id="purple" style="font-size: 150px; left: 30rem; top: 0rem;" class="fas fa-neuter floater" data-speed="0"></i>
+    <i id="orange" style="font-size: 150px; left: 30rem; top: 36rem;" class="fas fa-neuter floater" data-speed="0"></i>
+    <i id="teal" style="font-size: 400px; left: 10rem; top: 0;" class="fas fa-transgender floater" data-speed="5"></i>
+    <i id="red" style="font-size: 200px; left: 0rem; top: 0rem;" class="fas fa-transgender-alt floater" data-speed="3"></i>
+    <i id="red" style="font-size: 200px; left: 60rem; top: 10rem;" class="fas fa-transgender-alt floater" data-speed="2.5"></i>
     <div class="content">
       <h3> We estimate more than </h3>
       <h1 class="number-text"> <%=@perc_aprnts_ugi%>%</h1>
@@ -95,10 +108,6 @@
 <!-- Apprentice Statistic #7  -->
 
   <div class="regular wrapper surprises">
-    <!-- Images here-->
-    <img src="" class="floating-image" alt="" />
-    <img src="" class="floating-image" alt="" />
-    <img src="" class="floating-image" alt="" />
     <div class="content">
       <h3>
       An apprentice at Uber was a former professional dancer. <br>
@@ -117,15 +126,29 @@
   <div class="regular wrapper usa">
     <img src="https://i.imgur.com/xEEnl8e.png" class="floating-image" alt="United States Map" />
     <div class="content">
-      <h3>In the United States, we are tracking</h3>
+      <h3>This project tracks</h3>
       <h1 class="number-text"><%=@total_companies%></h1>
-      <br><h3>companies with software engineering apprenticeships.</h3>
+      <br><h3>companies with</h3>
+      <br><h3>software engineering apprenticeships</h3>
+      <br><h3>in the United States.</h3>
     </div>
   </div>
 
 <!-- Company Statistic #9 -->
 
   <div class="parallax wrapper salary">
+    <i id="blue" style="font-size: 175px; left: 200px; top: 2rem;" class="fas fa-money-bill-wave floater" data-speed="0"></i>
+    <i id="purple" style="font-size: 125px; left: 900px; top: 37rem;" class="fas fa-money-bill-wave floater" data-speed="0"></i>
+    <i id="orange" style="font-size: 300px; left: 1175px; top: -10rem;" class="fas fa-money-bill-wave floater" data-speed="5"></i>
+    <i id="teal" style="font-size: 150px; left: 45rem; top: 0rem;" class="fas fa-money-bill-wave floater" data-speed="0"></i>
+    <i id="plum" style="font-size: 125px; left: 1rem; top: 37rem;" class="fas fa-coins floater" data-speed="0"></i>
+    <i id="plum" style="font-size: 250px; left: 60rem; top: -10rem;" class="fas fa-coins floater" data-speed="3"></i>
+    <i id="blue" style="font-size: 200px; left: 10rem; top: -20rem;" class="fas fa-coins floater" data-speed="2"></i>
+    <i id="purple" style="font-size: 150px; left: 30rem; top: 0rem;" class="fas fa-coins floater" data-speed="0"></i>
+    <i id="orange" style="font-size: 150px; left: 30rem; top: 36rem;" class="fas fa-credit-card floater" data-speed="0"></i>
+    <i id="teal" style="font-size: 300px; left: 10rem; top: 0;" class="fas fa-credit-card floater" data-speed="5"></i>
+    <i id="red" style="font-size: 200px; left: 0rem; top: 0rem;" class="fas fa-credit-card floater" data-speed="3"></i>
+    <i id="red" style="font-size: 200px; left: 60rem; top: 10rem;" class="fas fa-credit-card floater" data-speed="2.5"></i>
     <div class="content">
       <h3>Average compensation in a software engineering apprenticeship is between…</h3>
       <h1 class="number-text">$75,000 - $100,000.</h1><br>
@@ -134,63 +157,26 @@
 
 <!-- Company Statistic #10 -->
 
-  <div class="regular wrapper start">
-    <img src="https://img.icons8.com/fluent/48/000000/calendar.png" class="floating-image" alt="Calendar" />
-    <div class="content">
-      <h3>The earliest formal software engineering apprenticeship started in 2008.</h3><br>
-    </div>
-  </div>
-
-<!-- Company Statistic #11 -->
-
-  <div class="parallax wrapper length">
+  <div class="regular wrapper length">
     <div class="content">
       <h3>The average apprenticeship length is<br></h3> <h1 class="number-text">7 months.</h1><br>
     </div>
   </div>
 
+<!-- Company Statistic #11 -->
+
+  <div class="parallax wrapper small-companies">
+    <img src="" class="floating-image" alt="" />
+    <div class="content">
+      <h3>Smaller, less famous companies including Jellyvision, R/GA, Detroit Labs, thoughtbot, and 8th Light have trained the most apprentices in tech since the earliest days, across a broad range of technology roles. </h3><br>
+    </div>
+  </div>
+
 <!-- Company Statistic #12 -->
 
-  <div class="regular wrapper retention">
-    <img src="" class="floating-image" alt="" />
+  <div class="regular wrapper biggest-company">
     <div class="content">
-      <h3>80% of apprentices convert to full time roles after their apprenticeship. </h3><br>
-      <h3>90% of apprentices stay a year or more at their company after their apprenticeship. </h3><br>
-    </div>
-  </div>
-
-<!-- Company Statistic #13 -->
-
-  <div class="parallax wrapper size">
-    <div class="content">
-      <h3>The biggest company running an apprenticeship program is Microsoft, with 100,000 employees. </h3><br>
-      <h3>The smallest company running an apprenticeship program is Viaget, with 13 employees.<br></h3>
-    </div>
-  </div>
-
-<!-- Company Statistic #14 -->
-
-  <div class="regular wrapper median">
-    <img src="" class="floating-image" alt="" />
-    <div class="content">
-      <h3>Of all our companies with software engineering apprenticeships, median company size is 58 employees.<br></h3>
-    </div>
-  </div>
-
-<!-- Company Statistic #15 -->
-
-  <div class="parallax wrapper annual">
-    <div class="content">
-      <h3>Microsoft is hiring and training the most software engineer apprentices each year, about 120 apprentices.<br></h3>
-    </div>
-  </div>
-
-<!-- Company Statistic #16 -->
-
-  <div class="regular wrapper most">
-    <img src="" class="floating-image" alt="" />
-    <div class="content">
-      <h3>thoughtbot is invested the most in software engineering apprenticeships, by number of hired software engineering apprentices.</h3><br>
+      <h3>Microsoft (including LinkedIn and GitHub) currently hires and trains the most software engineer apprentices each year.<br></h3>
     </div>
   </div>
 
@@ -199,54 +185,48 @@
     Clever Cities
   </div>
 
-<!-- Industry Statistic #11 -->
-
-    <div class="regular wrapper most">
-      <img src="" class="floating-image" alt="" />
-      <div class="content">
-        <h3>In the next 5 years, 150 million new jobs will be created in technology globally, according to the LinkedIn Economic Graph. Nearly 100 million of those jobs are forecasted to be Software Engineers.</h3><br>
-      </div>
-    </div>
-
-<!-- Industry Statistic #12 -->
-
-    <div class="parallax wrapper annual">
-      <div class="content">
-        <h3>Of the top 10 most in-demand jobs identified by Microsoft during COVID-19 and beyond, software engineering ranked highest for greatest number of job openings, steady growth over time, paying a livable wage, and skills that can be developed online in quarantine.</h3>
-      </div>
-    </div>
-
 <!-- Industry Statistic #13 -->
 
-    <div class="regular wrapper most">
+    <div class="regular wrapper jobs">
       <img src="" class="floating-image" alt="" />
       <div class="content">
-        <h3>Broad public and private investments in education and workforce development are being discussed everywhere.</h3>
+        <h3>In the next 5 years,</h3><br>
+        <h1 class="number-text-2"> 150 million </h1><br>
+        <h3> new jobs will be created in technology globally, </h3><br>
+        <h3> according to the LinkedIn Economic Graph. </h3><br>
+        <h1 class="number-text-2"> 65% </h3><br>
+        <h3> of those jobs are forecasted </h3><br>
+        <h3> to be Software Engineers.</h3><br>
       </div>
     </div>
 
 <!-- Industry Statistic #14 -->
 
-    <div class="parallax wrapper annual">
+    <div class="parallax wrapper ranking">
       <div class="content">
-        <h3>So what are the best cities to study and train as a non-traditional software engineer?</h3>
+        <h3>Of the top 10 most in-demand jobs identified by Microsoft during COVID-19 and beyond, software engineering ranked highest for greatest number of job openings, steady growth over time, paying a livable wage, and skills that can be developed online in quarantine.</h3>
       </div>
     </div>
 
 <!-- Industry Statistic #15 -->
 
-    <div class="regular wrapper most">
+    <div class="regular wrapper investments">
       <img src="" class="floating-image" alt="" />
       <div class="content">
-        <h3>Right now, Chicago has the most past and present software engineering apprentices total. Companies across Chicago started training apprentices earliest, including very small companies, flying in the face of Silicon Valley lore about junior engineers reducing productivity. Companies in Chicago have shown the most commitment over time to developing amazing non-traditional engineers through apprenticeship. In Chicago, apprenticeship is an integral part of software engineering culture. Chicago is likely the best city to be a non-traditional software engineer.</h3>
+        <h3>During COVID-19, broad public and private investments in education and workforce development are being discussed everywhere.</h3>
       </div>
     </div>
 
 <!-- Industry Statistic #16 -->
 
-    <div class="parallax wrapper annual">
+    <div class="parallax wrapper worst">
+      <img src="" class="floating-image" alt="" />
       <div class="content">
-        <h3>Companies in the Greater Seattle area hire the most non-traditional engineers each year. We're talking about you, Microsoft and Amazon. Seattle likely hires the most non-traditional engineers who didn't study or train in Seattle. Non-traditional engineers looking for a new place to call home should look to Seattle. Employers in the Seattle area should look to Microsoft and Amazon for establishing some of the United States' best practices for hiring and training non-traditional engineers. </h3>
+        <h3>Despite graduating the most non-traditional engineers of any city in the United States,</h3>
+        <h1 class="number-text-2">New York City</h1>
+        <h3>maintains the lowest rates of technology apprenticeships in the country.</h3><br>
+        <h3>New York likely ranks as the most difficult and possibly the worst city to be a non-traditional engineer, followed by Los Angeles and Washington DC.</h3><br><br>
+        <p> ps. that is to say, employers in and around New York, Los Angeles, and Washington D.C. could benefit the most from starting software engineering apprenticeships immediately, being some of the first and only in their local area, and hiring some of the best non-traditional engineers in the country.</p>
       </div>
     </div>
 
@@ -255,13 +235,33 @@
     <div class="regular wrapper most">
       <img src="" class="floating-image" alt="" />
       <div class="content">
-        <h3>The Greater Bay Area, including San Francisco, San Jose, and Oakland, has the most companies currently hiring through software engineering apprenticeship. This region holds the most potential for impact in the country.</h3>
+        <h3> The city with the most past and present software engineering apprentices total is</h3>
+        <h1 class="number-text">Chicago.</h1>
+        <h3>Companies across Chicago started training apprentices earliest, including very small companies, flying in the face of Silicon Valley lore about junior engineers reducing productivity.</h3>
+        <h3>Companies in Chicago have shown the most commitment over time to developing amazing non-traditional engineers through apprenticeship. Chicago is likely the best city to be a non-traditional software engineer.</h3>
       </div>
     </div>
 
 <!-- Industry Statistic #18 -->
 
     <div class="parallax wrapper annual">
+      <div class="content">
+        <h3>Companies in the Greater Seattle area hire the most non-traditional engineers each year. We're talking about you, Microsoft and Amazon. Seattle likely hires the most non-traditional engineers who didn't study or train in Seattle. Non-traditional engineers looking for a new place to call home should look to Seattle. Employers in the Seattle area should look to Microsoft and Amazon for establishing some of the United States' best practices for hiring and training non-traditional engineers. </h3>
+      </div>
+    </div>
+
+<!-- Industry Statistic #19 -->
+
+    <div class="regular wrapper potential">
+      <img src="" class="floating-image" alt="" />
+      <div class="content">
+        <h3>The Greater Bay Area, including San Francisco, San Jose, and Oakland, has the most companies currently hiring through software engineering apprenticeship. This region holds the most potential for impact in training and hiring in the United States.</h3>
+      </div>
+    </div>
+
+<!-- Industry Statistic #20 -->
+
+    <div class="parallax wrapper interactive">
       <div class="content">
         <h3>If all the companies with >100 employees in
         <%=select("cities", "companies_in_city", options_for_select(@companies_gt_100_employees, selected = 'San Francisco Bay Area'), {}, {id: "city-select-input", class: "city-select-input"})%>
@@ -270,58 +270,40 @@
       </div>
     </div>
 
-<!-- Industry Statistic #19 -->
-
-    <div class="regular wrapper worst">
-      <img src="" class="floating-image" alt="" />
-      <div class="content">
-        <h3>Despite graduating the most non-traditional engineers of any city in the United States, the Greater New York City Metropolitan area maintains one of the lowest rates of technology apprenticeships in the country. New York likely ranks as the most difficult and possibly the worst city to be a non-traditional engineer, followed by Los Angeles and Washington DC.</h3>
-        <p> That is to say, employers in the New York, Los Angeles, and Washington D.C. Metropolitan Areas stand to benefit the most from starting software engineering apprenticeships immediately. These employers would likely be the first and only in their area, and could repeatedly, easily hire some of the best non-traditional engineers in the United States.
-      </div>
-    </div>
-
-<!-- Industry Statistic #20 -->
-
-    <div class="parallax wrapper small">
-      <div class="content">
-        <h3></h3>
-      </div>
-    </div>
-
 <!-- Learn More Footer -->
 
-  <div class="regular wrapper still-more">
-      <div class="content-2">
-      ...Still Want More?
+  <div class="regular wrapper closing">
+      <div class="content">
+      <h1 class="number-text"> ...Still Want More?</h1>
       </div>
   </div>
 
-  <div class="regular wrapper mini-footer">
+  <div class="wrapper mini-footer">
     <center>
-      <div class="apprentices-card">
+      <a class="apprentices-card" href="https://kamrinklauschie633721.typeform.com/to/GX7D6ek7">
         <div  class="apprentices-info">
           Join our Slack
           <div class="apprentices-icon">
             <i class="fas fa-user-astronaut"></i>
           </div>
         </div>
-      </div>
-      <div class="companies-card">
+      </a>
+      <a class="companies-card" href="https://medium.com/apprenticeship-io">
         <div  class="companies-info">
           Explore Resources
           <div class="companies-icon">
           <i class="fas fa-laptop-code"></i>
           </div>
         </div>
-      </div>
-      <div class="cities-card">
+      </a>
+      <a class="cities-card" href="">
         <div class="cities-info">
           Subscribe
           <div class="cities-icon">
           <i class="fab fa-mailchimp"></i>
           </div>
         </div>
-      </div>
+      </a>
     </center>
   </div>
 
