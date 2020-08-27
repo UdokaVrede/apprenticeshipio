@@ -1,31 +1,5 @@
-// .regular-wrapper {
-//   padding-top:20vh;
-//   width: 100vw;
-//   height:100vh;
-//   z-index: 2;
-//   position: relative;
-// }
+// Panel Structure
 
-// .parallax-wrapper {
-//   width: 100vw;
-//   height: 100vh;
-//   padding-top:10vh;
-//   box-sizing: border-box;
-//   transform-style: preserve-3d;
-// }
-
-// .parallax-wrapper::before {
-//   content:"";
-//   width: 100vw;
-//   height: 100vh;
-//   top:0;
-//   left:0;
-//   position: absolute;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   z-index: -1;
-//   transform:translateZ(-1px) scale(2);
-// }
 .wrapper {
   padding: 10rem 0;
   position: relative;
@@ -44,8 +18,12 @@
 
 .number-text {
   font-family: $numbers-font;
-  padding-top: 40px;
   font-size: 100px;
+}
+
+.number-text-2 {
+  font-family: $numbers-font;
+  font-size: 75px;
 }
 
 .floater {
@@ -61,33 +39,43 @@
   &.cities { color: $purple; }
 }
 .floating-image {
-  transform: translate(75px, 50px) rotate(-25deg);
-  float: left;  
+  position: absolute;
+  z-index: 2;
 }
+
+// Panel Customization
 
 .usa {
   background-color: $purple;
-  .floating-image { width: 350px; }
+  z-index: 2;
+  .floating-image {
+    transform: translate(75px, 50px) rotate(-25deg);
+    width: 425px;
+    margin-left: 3em;
+    margin-top: -3em;
+  }
   .content { color: $medium-purple; }
 }
 
-.education {
-  background-size: 120%;
-  background-image: url(https://i.imgur.com/C46DO20.jpg);
-  background-repeat: no-repeat;
-  background-position-y: 50%;
-  // &::before {  }
-  .content { color: $teal; }
+.college {
+  position: relative;
+  background-color: $white;
+  .content { color: $black; }
 }
 
-.college {
+.education {
   background-color: $navy;
+  .floating-image {
+    width: 300px;
+    margin-left: 12em;
+    margin-top: -15em;
+  }
   .content { color: $navy; }
 }
 
 .careers {
   background-image: url("https://i.imgur.com/zU6qOcA.png");
-  .floating-image { 
+  .floating-image {
     font-size: 200px;
     color: $orange;
   }
@@ -102,13 +90,9 @@
 }
 
 .gender {
-  background-image: url("https://i.imgur.com/zU6qOcA.png");
+  background-color: $white;
   position: relative;
-  .floater {
-    font-size: 200px;
-    color: $orange;
-  }
-  .content { color: $orange; }
+  .content { color: $black; }
 }
 
 .surprises {
@@ -118,7 +102,7 @@
 }
 
 .salary {
-  &::before { background-image: url("https://i.imgur.com/7VSA6VB.png"); }
+  background-color: $white;
   .content { color: $teal; }
 }
 
@@ -129,33 +113,67 @@
 }
 
 .length {
-  &::before { background-image: url("https://i.imgur.com/7VSA6VB.png"); }
+  background-color: $purple;
   .content {color: $orange;}
 }
 
 .retention {
-  background-color: $plum;
+  background-color: $orange;
   .floating-image { width: 350px; }
   .content {color: $light-purple;}
 }
 
-.size {
-  &::before {background-image: url("https://i.imgur.com/7VSA6VB.png");}
+.biggest-company {
+  background-color: $medium-red;
+  .content {color: $medium-red;}
+}
+
+.small-companies {
+  background-color: $white;
   .content {color: $orange;}
 }
 
-.median {
-  background-color: $plum;
-  .floating-image { width: 350px; }
+.jobs {
+  background-color: $teal;
   .content {color: $light-purple;}
 }
 
-.annual {
-  &::before {background-image: url("https://i.imgur.com/7VSA6VB.png");}
+.ranking {
+  background-color: $white;
   .content {color: $orange;}
+}
+
+.investments {
+  background-color: $purple;
+  .content {color: $light-purple;}
+}
+
+.worst {
+  background-color: $white;
+  .content {color: $black;}
 }
 
 .most {
+  background-color: $orange;
+  .content {color: $orange;}
+}
+
+.annual {
+  background-color: $medium-red;
+  .content {color: $medium-red;}
+}
+
+.potential {
+  background-color: $white;
+  .content {color: $black;}
+}
+
+.interactive {
+  background-color: $plum;
   .content {color: $light-purple;}
-  .floating-image { width: 350px; }
+}
+
+.closing {
+  background-color: $white;
+  .content {color: $black;}
 }
