@@ -6,14 +6,15 @@
   position: relative;
   height: 100vh;
   width: 100%;
+  background-color: $background-gray;
 }
 
 .our-data-header-container div {
   object-fit: contain;
   position: absolute;
   width: 100%;
-  float: center;
-  margin-left: 200px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .apprenticeships-1 {
@@ -21,11 +22,21 @@
 }
 
 .apprenticeships-2 {
-  margin-top: -100px;
+  margin-top: -200px;
+  background: rgb(213,58,64);
+  background: linear-gradient(90deg, rgba(213,58,64,1) 0%, rgba(245,149,39,1) 20%, rgba(31,175,183,1) 40%, rgba(19,113,175,1) 60%, rgba(65,44,137,1) 80%, rgba(194,63,94,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.apprenticeships-3 {
-  margin-top: -150px;
+.header-text-1 {
+  font-family: $numbers-font;
+  font-size: 65px;
+}
+
+.header-text-2 {
+  font-family: $numbers-font;
+  font-size: 75px;
 }
 
 // .parallax-loop-1 {
