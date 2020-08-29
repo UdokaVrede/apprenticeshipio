@@ -1,4 +1,4 @@
-// FYI: The icon colors for the navbar live in footer CSS right now
+// FYI: The icon colors for the navbar are located in footer CSS right now
 
 .podcast-header {
   float: right;
@@ -16,12 +16,6 @@
   padding: 5px 8px 5px 8px;
   a {
     padding: 10px;
-    i {
-      transition: all .1s ease-in-out;
-      &:hover {
-        transform: scale(1.2);
-      }
-    }
   }
 }
 

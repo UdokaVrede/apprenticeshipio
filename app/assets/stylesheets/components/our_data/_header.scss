@@ -1,121 +1,57 @@
 .our-data-header-container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
+  background-image: url("https://i.imgur.com/CIQX34s.png");
+  background-color: $white;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   height: 100vh;
   width: 100%;
-  background-color: $background-gray;
 }
 
-.our-data-header-container div {
-  object-fit: contain;
-  position: absolute;
-  width: 100%;
-  margin-left: 100px;
-  margin-right: 100px;
+.our-data-header h2 {
+  font-size: 7rem;
+}
+
+.our-data-header h4 {
+  font-family: $headers-font;
+  font-size: 3.7em;
+  position: relative;
 }
 
 .apprenticeships-1 {
-  margin-top: 0px;
+  margin-top: 120px;
+  margin-left: 50px;
+  position: relative;
 }
 
 .apprenticeships-2 {
-  margin-top: -200px;
+  position: relative;
+  margin-top: -140px;
+  margin-left: 50px;
   background: rgb(213,58,64);
-  background: linear-gradient(90deg, rgba(213,58,64,1) 0%, rgba(245,149,39,1) 20%, rgba(31,175,183,1) 40%, rgba(19,113,175,1) 60%, rgba(65,44,137,1) 80%, rgba(194,63,94,1) 100%);
+  background: linear-gradient(90deg, rgba(213,58,64,1) 6%, rgba(245,149,39,1) 15%, rgba(31,175,183,1) 26%, rgba(19,113,175,1) 36%, rgba(65,44,137,1) 46%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.header-text-1 {
-  font-family: $numbers-font;
-  font-size: 65px;
-}
-
-.header-text-2 {
-  font-family: $numbers-font;
-  font-size: 75px;
-}
-
-// .parallax-loop-1 {
-//   top: 100px;
-//   left: 100px;
-// }
-
-// .parallax-loop-2 {
-//   right: 450px;
-//   bottom: 50px;
-// }
-
-// .parallax-loop-3 {
-//   top: 350px;
-//   right: 50px;
-// }
-
-// .parallax-loop-4 {
-//   left: 50px;
-//   bottom: 350px;
-// }
-
-// #Large-Loop {
-//   mask-image: url(<%= asset_path 'LargeLoop.svg' %>);
-//   width: 530px;
-//   height: 442px;
-//   background-color: $teal;
-// }
-
-// #Medium-Loop {
-//   mask-image: url(<%= asset_path 'MediumLoop.svg' %>);
-//   width: 265px;
-//   height: 221px;
-//   background-color: $medium-red;
-// }
-
-// #Small-Loop {
-//   mask-image: url(<%= asset_path 'SmallLoop.svg' %>);
-//   width: 245px;
-//   height: 221px;
-//   background-color: $purple;
-// }
-
-// #Tiny-Loop {
-//   mask-image: url(<%= asset_path 'TinyLoop.svg' %>);
-//   width: 125px;
-//   height: 110px;
-//   background-color: $orange;
-// }
-
-.our-data-header h2 {
-  color: $black;
-  font-size: 10rem;
+.our-data-overview {
+  padding: 6rem 0;
   position: relative;
+  z-index: 1;
 }
 
 // Header - Apprentices, Companies, Cities
 
-.regular-wrapper-header, .regular-wrapper-footer {
-width: 100vw;
-height:100vh;
-// padding-top:20vh;
-z-index: 2;
-background-color: $background-gray;
-position: relative;
-background-repeat: no-repeat;
-background-size: cover;
-}
-
-.regular-wrapper-mini-header, .regular-wrapper-mini-footer {
-padding: 50px 25px 50px 25px;
+.mini-header {
+padding: 0px 25px 50px 25px;
 }
 
 .apprentices-card {
 display: inline-block;
 position: relative;
-width: 258px;
-min-width: 202.5px;
-height: 258px;
+width: 200px;
+min-width: 150px;
+height: 200px;
 border-radius: 15px;
 overflow:hidden;
 box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
@@ -125,23 +61,24 @@ position: relative;
 }
 
 .apprentices-info {
-font-size: 30px;
+font-size: 16px;
 color: $white;
 margin: 32px;
-font-family: $body-font;
+font-family: $headers-font;
+text-decoration: none;
 }
 
 .apprentices-icon {
-font-size: 75px;
+font-size: 55px;
 margin-top: 5px;
 }
 
 .companies-card {
 display: inline-block;
 position: relative;
-width: 258px;
-min-width: 202.5px;
-height: 258px;
+width: 200px;
+min-width: 150px;
+height: 200px;
 border-radius: 15px;
 overflow:hidden;
 box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
@@ -150,23 +87,23 @@ background-color: $blue;
 }
 
 .companies-info {
-font-size: 30px;
+font-size: 16px;
 color: $white;
 margin: 32px;
-font-family: $body-font;
+font-family: $headers-font;
 }
 
 .companies-icon {
-font-size: 75px;
+font-size: 55px;
 margin-top: 5px;
 }
 
 .cities-card {
 display: inline-block;
 position: relative;
-width: 258px;
-min-width: 202.5px;
-height: 258px;
+width: 200px;
+min-width: 150px;
+height: 200px;
 border-radius: 15px;
 overflow:hidden;
 box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
@@ -175,13 +112,13 @@ background-color: $purple;
 }
 
 .cities-info {
-font-size: 30px;
+font-size: 16px;
 color: $white;
 margin: 32px;
 font-family: $body-font;
 }
 
 .cities-icon {
-font-size: 75px;
+font-size: 60px;
 margin-top: 5px;
 }

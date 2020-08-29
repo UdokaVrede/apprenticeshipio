@@ -1,5 +1,6 @@
 // Import your components CSS files here.
 @import "about";
+@import "animations";
 @import "apprentice-card";
 @import "banner";
 @import "colors";
@@ -13,6 +14,10 @@
 @import "testimonial-card";
 
 // Our Data CSS
+@import "our_data/apprentices";
+@import "our_data/cities";
+@import "our_data/companies";
+@import "our_data/footer";
 @import "our_data/header";
 
 
