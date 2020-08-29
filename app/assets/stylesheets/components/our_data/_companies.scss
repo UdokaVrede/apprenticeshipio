@@ -1,0 +1,32 @@
+.salary {
+  background-color: $white;
+  .content { color: $teal; }
+}
+
+.start  {
+  background-color: $plum;
+  .floating-image { width: 100px; }
+  .content {color: $light-purple;}
+}
+
+.length {
+  background-color: $purple;
+  .content {color: $orange;}
+}
+
+.retention {
+  background-color: $orange;
+  .floating-image { width: 350px; }
+  .content {color: $light-purple;}
+}
+
+.biggest-company {
+  background-color: $medium-red;
+  .content {color: $medium-red;}
+}
+
+.small-companies {
+  background-color: $white;
+  .content {color: $orange;}
+}
+

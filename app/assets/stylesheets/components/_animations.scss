@@ -1,0 +1,13 @@
+.grow {
+  transition: all .1s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+
+.grow-small {
+  transition: all .1s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+  }
+}

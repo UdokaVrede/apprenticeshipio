@@ -1,0 +1,20 @@
+.closing {
+  background-color: $blue;
+  position: relative;
+  .closing-text {
+    position: absolute;
+    font-family: $headers-font;
+    font-size: 75px;
+    color: $white;
+    top: 200px;
+    left: 200px;
+  }
+  .down-arrow {
+    font-size: 60px;
+    color: $white;
+  }
+  .billboard {
+    width: 1000px;
+    margin-left: 500px;
+  }
+}

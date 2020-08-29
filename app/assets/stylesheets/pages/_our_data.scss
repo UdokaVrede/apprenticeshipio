@@ -1,7 +1,7 @@
 // Panel Structure
 
 .wrapper {
-  padding: 10rem 0;
+  padding: 12rem 0;
   position: relative;
   z-index: 1;
 }
@@ -37,158 +37,18 @@
 }
 
 .number-text-5 {
-  font-family: $numbers-font;
-  font-size: 22px;
-}
-
-.floater {
-  position: absolute;
+  font-family: $body-font;
+  font-size: 27px;
+  font-weight: bold;
 }
 
 .title {
-  font-family: $numbers-font;
+  font-family: $headers-font;
   font-size: 75px;
-  margin: 100px;
+  margin: 50px;
   &.apprentices { color: $teal; }
   &.companies { color: $blue; }
   &.cities { color: $purple; }
 }
-.floating-image {
-  position: absolute;
-  z-index: 2;
-}
 
-// Panel Customization
-
-.usa {
-  background-color: $purple;
-  z-index: 2;
-  .floating-image {
-    transform: translate(75px, 50px) rotate(-25deg);
-    width: 425px;
-    margin-left: 3em;
-    margin-top: -3em;
-  }
-  .content { color: $medium-purple; }
-}
-
-.college {
-  position: relative;
-  background-color: $white;
-  .content { color: $black; }
-}
-
-.education {
-  background-color: $navy;
-  .floating-image {
-    width: 300px;
-    margin-left: 12em;
-    margin-top: -15em;
-  }
-  .content { color: $navy; }
-}
-
-.careers {
-  background-image: url("https://i.imgur.com/zU6qOcA.png");
-  .floating-image {
-    font-size: 200px;
-    color: $orange;
-  }
-  .content { color: $black; }
-}
-
-.race {
-  z-index: 2;
-  background-color: $navy;
-  .content { color: $blue; }
-  .race-number {color: $medium-blue;}
-}
-
-.gender {
-  background-color: $white;
-  position: relative;
-  .content { color: $black; }
-}
-
-.surprises {
-  background-color: $plum;
-  .content {color: $light-purple;}
-  .floating-image { width: 350px; }
-}
-
-.salary {
-  background-color: $white;
-  .content { color: $teal; }
-}
-
-.start  {
-  background-color: $plum;
-  .floating-image { width: 100px; }
-  .content {color: $light-purple;}
-}
-
-.length {
-  background-color: $purple;
-  .content {color: $orange;}
-}
-
-.retention {
-  background-color: $orange;
-  .floating-image { width: 350px; }
-  .content {color: $light-purple;}
-}
-
-.biggest-company {
-  background-color: $medium-red;
-  .content {color: $medium-red;}
-}
-
-.small-companies {
-  background-color: $white;
-  .content {color: $orange;}
-}
-
-.jobs {
-  background-color: $teal;
-  .content {color: $light-purple;}
-}
-
-.ranking {
-  background-color: $white;
-  .content {color: $orange;}
-}
-
-.investments {
-  background-color: $purple;
-  .content {color: $light-purple;}
-}
-
-.worst {
-  background-color: $white;
-  .content {color: $black;}
-}
-
-.most {
-  background-color: $orange;
-  .content {color: $orange;}
-}
-
-.annual {
-  background-color: $medium-red;
-  .content {color: $medium-red;}
-}
-
-.potential {
-  background-color: $white;
-  .content {color: $black;}
-}
-
-.interactive {
-  background-color: $plum;
-  .content {color: $light-purple;}
-}
-
-.closing {
-  background-color: $white;
-  .content {color: $black;}
-}
+// Panel customization is located in components/our_data

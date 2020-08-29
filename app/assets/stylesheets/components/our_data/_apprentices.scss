@@ -1,0 +1,42 @@
+.usa {
+  background-color: $purple;
+  .content { color: $medium-purple; }
+}
+
+.college {
+  position: relative;
+  background-color: $white;
+  .content { color: $black; }
+}
+
+.education {
+  background-color: $navy;
+  .content { color: $navy; }
+}
+
+.careers {
+  .floating-image {
+    font-size: 200px;
+    color: $orange;
+  }
+  .content { color: $black; }
+}
+
+.race {
+  z-index: 2;
+  background-color: $navy;
+  .content { color: $blue; }
+  .race-number {color: $medium-blue;}
+}
+
+.gender {
+  background-color: $white;
+  position: relative;
+  .content { color: $black; }
+}
+
+.surprises {
+  background-color: $plum;
+  .content {color: $light-purple;}
+  .floating-image { width: 350px; }
+}
