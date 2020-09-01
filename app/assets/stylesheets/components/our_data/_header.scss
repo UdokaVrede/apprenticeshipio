@@ -35,18 +35,20 @@
 }
 
 .our-data-overview {
-  padding: 6rem 0;
   position: relative;
   z-index: 1;
+  background-color: $white;
+  padding-top: 100px;
 }
 
 // Header - Apprentices, Companies, Cities
 
 .mini-header {
 padding: 0px 25px 50px 25px;
+background-color: $white;
 }
 
-.apprentices-card {
+.apprentices-card, .companies-card, .cities-card {
 display: inline-block;
 position: relative;
 width: 200px;
@@ -56,69 +58,30 @@ border-radius: 15px;
 overflow:hidden;
 box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
 margin: 50px;
-background-color: $teal;
 position: relative;
 }
 
-.apprentices-info {
-font-size: 16px;
+.apprentices-card {
+  background-color: $medium-blue;
+}
+
+.companies-card {
+  background-color: $navy;
+}
+
+.cities-card {
+  background-color: $medium-purple;
+}
+
+.apprentices-info, .companies-info, .cities-info {
+font-size: 20px;
 color: $white;
 margin: 32px;
 font-family: $headers-font;
 text-decoration: none;
 }
 
-.apprentices-icon {
-font-size: 55px;
-margin-top: 5px;
-}
-
-.companies-card {
-display: inline-block;
-position: relative;
-width: 200px;
-min-width: 150px;
-height: 200px;
-border-radius: 15px;
-overflow:hidden;
-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
-margin: 50px;
-background-color: $blue;
-}
-
-.companies-info {
-font-size: 16px;
-color: $white;
-margin: 32px;
-font-family: $headers-font;
-}
-
-.companies-icon {
-font-size: 55px;
-margin-top: 5px;
-}
-
-.cities-card {
-display: inline-block;
-position: relative;
-width: 200px;
-min-width: 150px;
-height: 200px;
-border-radius: 15px;
-overflow:hidden;
-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
-margin: 50px;
-background-color: $purple;
-}
-
-.cities-info {
-font-size: 16px;
-color: $white;
-margin: 32px;
-font-family: $body-font;
-}
-
-.cities-icon {
-font-size: 60px;
+.apprentices-icon, .companies-icon, .cities-icon {
+font-size: 50px;
 margin-top: 5px;
 }

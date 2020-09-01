@@ -18,3 +18,86 @@
     margin-left: 500px;
   }
 }
+
+// Footer - Slack, Resources, Newsletter
+
+.mini-footer {
+padding: 0px 25px 50px 25px;
+}
+
+.slack-tile {
+display: inline-block;
+position: relative;
+width: 200px;
+min-width: 150px;
+height: 200px;
+border-radius: 15px;
+overflow:hidden;
+box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+margin: 50px;
+background-color: $teal;
+position: relative;
+}
+
+.slack-info {
+font-size: 16px;
+color: $white;
+margin: 32px;
+font-family: $headers-font;
+text-decoration: none;
+}
+
+.slack-icon {
+font-size: 55px;
+margin-top: 5px;
+}
+
+.resources-tile {
+display: inline-block;
+position: relative;
+width: 200px;
+min-width: 150px;
+height: 200px;
+border-radius: 15px;
+overflow:hidden;
+box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+margin: 50px;
+background-color: $blue;
+}
+
+.resources-info {
+font-size: 16px;
+color: $white;
+margin: 32px;
+font-family: $headers-font;
+}
+
+.resources-icon {
+font-size: 55px;
+margin-top: 5px;
+}
+
+.newsletter-tile {
+display: inline-block;
+position: relative;
+width: 200px;
+min-width: 150px;
+height: 200px;
+border-radius: 15px;
+overflow:hidden;
+box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+margin: 50px;
+background-color: $purple;
+}
+
+.newsletter-info {
+font-size: 16px;
+color: $white;
+margin: 32px;
+font-family: $body-font;
+}
+
+.newsletter-icon {
+font-size: 60px;
+margin-top: 5px;
+}

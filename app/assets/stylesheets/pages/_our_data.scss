@@ -37,6 +37,11 @@
 }
 
 .number-text-5 {
+  font-family: $numbers-font;
+  font-size: 25px;
+}
+
+.number-text-6 {
   font-family: $body-font;
   font-size: 27px;
   font-weight: bold;
@@ -45,10 +50,20 @@
 .title {
   font-family: $headers-font;
   font-size: 75px;
-  margin: 50px;
-  &.apprentices { color: $teal; }
-  &.companies { color: $blue; }
-  &.cities { color: $purple; }
+  padding: 50px;
+  color: $white;
+  span i {
+    margin-right: 50px;
+  }
+  &.apprentices {
+    background-color: $medium-blue;
+   }
+  &.companies {
+    background-color: $navy;
+    }
+  &.cities {
+    background-color: $medium-purple;
+    }
 }
 
 // Panel customization is located in components/our_data
