@@ -6,12 +6,15 @@
     font-family: $headers-font;
     font-size: 75px;
     color: $white;
-    top: 200px;
+    top: 125px;
     left: 200px;
   }
-  .down-arrow {
+  .down-arrow-footer {
     font-size: 60px;
     color: $white;
+    position: absolute;
+    top: 500px;
+    left: 250px;
   }
   .billboard {
     width: 1000px;
@@ -22,7 +25,7 @@
 // Footer - Slack, Resources, Newsletter
 
 .mini-footer {
-padding: 0px 25px 50px 25px;
+padding: 50px 25px 50px 25px;
 }
 
 .slack-tile {

@@ -1,32 +1,50 @@
+// #1 Company Tracker
+.company-tracker {
+  background-color: $navy;
+  padding: 3rem 0rem 12rem 0rem;
+  .content { color: $navy; }
+  .down-arrow {
+    text-decoration: none;
+    color: $navy;
+  }
+}
+
+// #2 Salary
 .salary {
-  background-color: $white;
-  .content { color: $teal; }
+  background-color: $medium-blue;
+  .content { color: $medium-blue; }
+  .down-arrow {
+    text-decoration: none;
+    color: $navy;
+  }
 }
 
-.start  {
-  background-color: $plum;
-  .floating-image { width: 100px; }
-  .content {color: $light-purple;}
-}
-
+// #3 Length
 .length {
-  background-color: $purple;
-  .content {color: $orange;}
+  background-color: $blue;
+  .content { color: $blue; }
+  .down-arrow {
+    text-decoration: none;
+    color: $blue;
+  }
 }
 
-.retention {
-  background-color: $orange;
-  .floating-image { width: 350px; }
-  .content {color: $light-purple;}
-}
-
-.biggest-company {
-  background-color: $medium-red;
-  .content {color: $medium-red;}
-}
-
+// #4 Small Companies
 .small-companies {
-  background-color: $white;
-  .content {color: $orange;}
+  background-color: $light-purple;
+  .content { color: $light-purple; }
+  .down-arrow {
+    text-decoration: none;
+    color: $light-purple;
+  }
 }
 
+// #5 Biggest Company
+.biggest-company {
+  background-color: $medium-purple;
+  .content { color: $medium-purple; }
+  .down-arrow {
+    text-decoration: none;
+    color: $medium-purple;
+  }
+}

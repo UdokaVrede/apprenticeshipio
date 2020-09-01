@@ -1,55 +1,120 @@
 // #1 USA
+.apprentice-tracker {
+  background-color: $medium-blue;
+  padding: 3rem 0rem 12rem 0rem;
+  .content { color: $medium-blue; }
+  .down-arrow {
+    text-decoration: none;
+    color: $medium-blue;
+  }
+}
+
 // #2 College
-// #3 Education
-// #4 Careers
-// #5 Race
-// #6 Gender
-// #7 Surprises
-// Surprises Examples
-// #8 Adversity
-// Adversity Examples
-// #9 Leaders
-// Leaders Examples
-
-.usa {
-  background-color: $purple;
-  .content { color: $medium-purple; }
-}
-
 .college {
-  position: relative;
-  background-color: $white;
-  .content { color: $black; }
-}
-
-.education {
   background-color: $navy;
   .content { color: $navy; }
+  .down-arrow {
+    text-decoration: none;
+    color: $navy;
+  }
 }
 
+// #3 Education
+.education {
+  background-color: $purple;
+  .content { color: $purple; }
+  .down-arrow {
+    text-decoration: none;
+    color: $purple;
+  }
+}
+
+// #4 Careers
 .careers {
-  .floating-image {
-    font-size: 200px;
+  background-color: $medium-purple;
+  .content { color: $medium-purple; }
+  .down-arrow {
+    text-decoration: none;
+    color: $medium-purple;
+  }
+}
+
+// #5 Race
+.race {
+  background-color: $light-purple;
+  .content { color: $light-purple; }
+  .down-arrow {
+    text-decoration: none;
+    color: $light-purple;
+  }
+}
+
+// #6 Gender
+.gender {
+  background-color: $plum;
+  .content { color: $plum; }
+  .down-arrow {
+    text-decoration: none;
+    color: $plum;
+  }
+}
+
+// #7 Surprises
+.surprises {
+  background-color: $medium-red;
+  .content {color: $medium-red;}
+  .down-arrow {
+    text-decoration: none;
+    color: $medium-red;
+  }
+}
+
+// #8 Surprises Examples
+.surprises-examples {
+  background-color: $orange;
+  .content {color: $orange;}
+  .down-arrow {
+    text-decoration: none;
     color: $orange;
   }
-  .content { color: $black; }
 }
 
-.race {
-  z-index: 2;
+// #9 Adversity
+.adversity {
+  background-color: $teal;
+  .content {color: $teal;}
+  .down-arrow {
+    text-decoration: none;
+    color: $teal;
+  }
+}
+
+// #10 Adversity Examples
+.adversity-examples {
+  background-color: $blue;
+  .content {color: $blue;}
+  .down-arrow {
+    text-decoration: none;
+    color: $blue;
+  }
+}
+
+// #11 Leaders
+.leaders {
+  background-color: $medium-blue;
+  .content {color: $medium-blue;}
+  .down-arrow {
+    text-decoration: none;
+    color: $medium-blue;
+  }
+}
+
+// #12 Leaders Examples
+.leaders-examples {
   background-color: $navy;
-  .content { color: $blue; }
-  .race-number {color: $medium-blue;}
-}
-
-.gender {
-  background-color: $white;
-  position: relative;
-  .content { color: $black; }
-}
-
-.surprises {
-  background-color: $plum;
-  .content {color: $light-purple;}
-  .floating-image { width: 350px; }
+  .content {color: $navy;}
+  .down-arrow {
+    text-decoration: none;
+    color: $navy;
+  }
 }

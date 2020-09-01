@@ -1,39 +1,151 @@
+// #1 Jobs
 .jobs {
-  background-color: $teal;
-  .content {color: $light-purple;}
+  background-color: $medium-purple;
+  padding: 3rem 0rem 12rem 0rem;
+  .content {color: $medium-purple;}
+  .down-arrow {
+    text-decoration: none;
+    color: $medium-purple;
+  }
 }
 
+// #2 Software
+.software {
+  background-color: $light-purple;
+  .content {color: $light-purple;}
+  .down-arrow {
+    text-decoration: none;
+    color: $light-purple;
+  }
+}
+
+// #3 Ranking
 .ranking {
-  background-color: $white;
-  .content {color: $orange;}
+  background-color: $plum;
+  .content {color: $plum;}
+  .down-arrow {
+    text-decoration: none;
+    color: $plum;
+  }
 }
 
+// #4 Investments
 .investments {
-  background-color: $purple;
-  .content {color: $light-purple;}
-}
-
-.worst {
-  background-color: $white;
-  .content {color: $black;}
-}
-
-.most {
-  background-color: $orange;
-  .content {color: $orange;}
-}
-
-.annual {
   background-color: $medium-red;
   .content {color: $medium-red;}
+  .down-arrow {
+    text-decoration: none;
+    color: $medium-red;
+  }
 }
 
-.potential {
-  background-color: $white;
-  .content {color: $black;}
+// #5 Lowest
+.lowest {
+  background-color: $orange;
+  .content {color: $orange;}
+  .down-arrow {
+    text-decoration: none;
+    color: $orange;
+  }
 }
 
-.interactive {
-  background-color: $plum;
+// #6 Worst
+.worst {
+  background-color: $teal;
+  .content {color: $teal;}
+  .down-arrow {
+    text-decoration: none;
+    color: $teal;
+  }
+}
+
+// #7 Start-Now
+.start-now {
+  background-color: $blue;
+  .content {color: $blue;}
+  .down-arrow {
+    text-decoration: none;
+    color: $blue;
+  }
+}
+
+// #8 Most
+.most {
+  background-color: $medium-blue;
+  .content {color: $medium-blue;}
+  .down-arrow {
+    text-decoration: none;
+    color: $medium-blue;
+  }
+}
+
+// #9 Chicago
+.chicago {
+  background-color: $navy;
+  .content {color: $navy;}
+  .down-arrow {
+    text-decoration: none;
+    color: $navy;
+  }
+}
+
+// #10 Best
+.best {
+  background-color: $purple;
+  .content {color: $purple;}
+  .down-arrow {
+    text-decoration: none;
+    color: $purple;
+  }
+}
+
+// #11 Annual
+.annual {
+  background-color: $medium-purple;
+  .content {color: $medium-purple;}
+  .down-arrow {
+    text-decoration: none;
+    color: $medium-purple;
+  }
+}
+
+// #12 Seattle
+.seattle {
+  background-color: $light-purple;
   .content {color: $light-purple;}
+  .down-arrow {
+    text-decoration: none;
+    color: $light-purple;
+  }
+}
+
+// #13 Potential
+.potential {
+  background-color: $plum;
+  .content {color: $plum;}
+  .down-arrow {
+    text-decoration: none;
+    color: $plum;
+  }
+}
+
+// #14 Interactive
+.interactive {
+  background-color: $medium-red;
+  .content {color: $medium-red;}
+  .down-arrow {
+    text-decoration: none;
+    color: $medium-red;
+  }
+}
+
+// #15 Training
+
+.training {
+  background-color: $orange;
+  .content {color: $orange;}
+  .down-arrow {
+    text-decoration: none;
+    color: $orange;
+  }
 }
