@@ -197,7 +197,7 @@ body {
 .hero {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 20px;
   width: 100vw;
   padding: 80px 40px 0 40px;
   text-align: right;
@@ -205,7 +205,6 @@ body {
 @media screen and (min-width: 680px) {
   .hero {
     width: 80vw;
-    padding: 160px 100px 40px 40px;
   }
 }
 @media screen and (min-width: 840px) {
@@ -229,17 +228,19 @@ body {
   }
 }
 .hero h1 {
-  margin: 0;
-  font-size: 3em;
+  margin: 0px;
+  font-size: 3.75em;
   font-weight: 900;
   color: #212a34;
 }
 .hero h2 {
   padding-top: 1em;
-  font-size: 1em;
+  font-size: 1.25em;
   font-weight: 400;
   opacity: .6;
   color: #212a34;
+  width: 350px;
+  float: right;
 }
 .hero button {
   margin-top: 40px;

@@ -1,5 +1,8 @@
 .divider {
-  display: flex;
+  @include media-breakpoint-up(sm) {
+    display: flex;
+  }
+  display: none;
   flex: row;
   justify-content: space-around;
   font-family: $headers-font;
