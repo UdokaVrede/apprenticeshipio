@@ -1,4 +1,8 @@
 .team-member-container {
+  @media (max-width: 767.98px) {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
   padding-left: 200px;
   padding-right: 200px;
 }
