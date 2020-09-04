@@ -7,9 +7,9 @@
 .inspiration-card {
   display: inline-block;
   position: relative;
-  width: 100px;
-  min-width: 100px;
-  height: 100px;
+  width: 150px;
+  min-width: 125px;
+  height: 150px;
   border-radius: 15px;
   overflow:hidden;
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
@@ -25,26 +25,31 @@
   font-family: $headers-font;
 }
 
+.inspiration-icon {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
 .inspiration-small-level {
-  padding-top: 25px;
+  padding-top: 35px;
 }
 
 .inspiration-medium-level {
-  padding-top: 15px;
+  padding-top: 25px;
 }
 
 .inspiration-large-level {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .inspiration-small-font {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .inspiration-smaller-font {
-  font-size:10px;
+  font-size: 15px;
 }
 
 .inspiration-tiny-font {
-  font-size: 9px;
+  font-size: 14px;
 }
