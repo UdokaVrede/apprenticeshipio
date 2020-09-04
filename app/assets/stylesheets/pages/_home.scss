@@ -1,1 +1,22 @@
-// Specific CSS for your home-page
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  body {
+    height: 100%;
+  }
+  .section--featured {
+    height: 506px;
+  }
+  .hero {
+    padding: 35px 28px 35px 35px;
+  }
+  .hero h1 {
+    font-size: 2.5em;
+  }
+  .hero h2 {
+    font-size: 1.5em;
+  }
+  .footer {
+    justify-content: space-around;
+    align-items: center;
+  }
+}

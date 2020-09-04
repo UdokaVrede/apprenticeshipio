@@ -200,16 +200,14 @@ body {
   right: 0;
   width: 100vw;
   padding: 80px 40px 0 40px;
-  font-family: 'Roboto', sans-serif;
-  color: #fff;
   text-align: right;
 }
-// @media screen and (min-width: 680px) {
-//   .hero {
-//     width: 80vw;
-//     padding: 160px 100px 40px 40px;
-//   }
-// }
+@media screen and (min-width: 680px) {
+  .hero {
+    width: 80vw;
+    padding: 160px 100px 40px 40px;
+  }
+}
 @media screen and (min-width: 840px) {
   .hero {
     width: 70vw;

@@ -5,6 +5,7 @@
   position: relative;
   z-index: 1;
 }
+
 .content {
   position: relative;
   margin: 0 auto;
@@ -19,26 +20,31 @@
 .number-text {
   font-family: $numbers-font;
   font-size: 100px;
+  text-transform: uppercase;
 }
 
 .number-text-2 {
   font-family: $numbers-font;
   font-size: 75px;
+  text-transform: uppercase;
 }
 
 .number-text-3 {
   font-family: $numbers-font;
   font-size: 50px;
+  text-transform: uppercase;
 }
 
 .number-text-4 {
   font-family: $numbers-font;
   font-size: 40px;
+  text-transform: uppercase;
 }
 
 .number-text-5 {
   font-family: $numbers-font;
   font-size: 25px;
+  text-transform: uppercase;
 }
 
 .number-text-6 {

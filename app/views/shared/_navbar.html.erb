@@ -1,4 +1,4 @@
-<div class="podcast-header align-items-center">
+<div class="podcast-header align-items-center d-none d-sm-block">
   <div class="header-links">
 <!--     <a href=""><i class="fab fa-slack"></i></a> -->
     <a href="https://github.com/apprenticeshipio"><i class="grow fab fa-github"></i></a>
@@ -13,10 +13,13 @@
 </div>
 
 <div class="navbar navbar-expand-sm navbar-apprenticeship">
+  <a class="navbar-brand" href="/home">
+    <img src="https://i.imgur.com/7VSA6VB.png" alt="apprenticeship.io Logo" />
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="collapsible" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <a class="navbar-brand" href="/home">
-      <img src="https://i.imgur.com/7VSA6VB.png" alt="apprenticeship.io Logo" />
-    </a>
     <ul class="navbar-nav">
       <li class="nav-item">
         <%= link_to "About Us", about_us_path, class: "nav-link" %>
@@ -27,7 +30,7 @@
       <li class="nav-item">
         <%= link_to "Hall of Fame", hall_of_fame_path, class: "nav-link" %>
       </li>
-      <li class="nav-item dropdown">
+      <li class="nav-item dropdown d-none d-lg-block">
         <a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
           <div class="dropdown-menu dropdown-menu-right" >
           <%= link_to "For Apprentices", resources_apprentices_path, class: "dropdown-item" %>
